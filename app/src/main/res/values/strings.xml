@@ -2,4 +2,6 @@
     <string name="app_name">Liceo Atarraya</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="pasarpantalla">Pasar Pantalla</string>
+    <string name="login">INICIE SESION</string>
 </resources>
