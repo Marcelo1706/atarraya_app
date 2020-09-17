@@ -4,4 +4,8 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="pasarpantalla">Pasar Pantalla</string>
     <string name="login">INICIE SESION</string>
+    <string name="imagen_de_login">imagen de login</string>>
+    <string name="nombreUsuario">Usuario</string>
+    <string name="password">Contaseña</string>
+    <string name="btn_iniciarSesion">Iniciar Sesión</string>
 </resources>
