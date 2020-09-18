@@ -17,7 +17,7 @@ public class Login extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (v.getContext(), principalMenu.class);
+                Intent intent = new Intent (v.getContext(), menuNavegacion.class);
                 startActivityForResult(intent, 0);
             }
         });
