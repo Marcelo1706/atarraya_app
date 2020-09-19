@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_inicio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:paddingStart="65dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="64dp"
+    android:paddingBottom="16dp"
+    tools:context=".splash">
+
+    <!-- Aún evaluo que opción sale mejor si dejarlo como background o como un Image view
+    <ImageView
+         android:layout_width="346dp"
+         android:layout_height="715dp"
+         android:layout_centerInParent="true"
+         android:src="@drawable/splash" />-->
+</RelativeLayout>
