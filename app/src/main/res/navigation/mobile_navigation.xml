@@ -22,6 +22,18 @@
         <action
             android:id="@+id/action_nav_home_to_configuracion"
             app:destination="@id/configuracion" />
+        <action
+            android:id="@+id/action_nav_home_to_menu"
+            app:destination="@id/menu" />
+        <action
+            android:id="@+id/action_nav_home_to_mensajes"
+            app:destination="@id/mensajes" />
+        <action
+            android:id="@+id/action_nav_home_to_notificaciones"
+            app:destination="@id/notificaciones" />
+        <action
+            android:id="@+id/action_nav_home_to_perfil"
+            app:destination="@id/perfil" />
     </fragment>
 
     <fragment
@@ -44,4 +56,24 @@
         android:id="@+id/configuracion"
         android:name="com.liceoatarraya.app.SettingsFragment"
         android:label="@string/config" />
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.liceoatarraya.app.Menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/mensajes"
+        android:name="com.liceoatarraya.app.mensajes"
+        android:label="fragment_mensajes"
+        tools:layout="@layout/fragment_mensajes" />
+    <fragment
+        android:id="@+id/notificaciones"
+        android:name="com.liceoatarraya.app.notificaciones"
+        android:label="fragment_notificaciones"
+        tools:layout="@layout/fragment_notificaciones" />
+    <fragment
+        android:id="@+id/perfil"
+        android:name="com.liceoatarraya.app.perfil"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
 </navigation>

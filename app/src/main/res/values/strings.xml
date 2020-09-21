@@ -38,4 +38,8 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="descripcion">imagendepresentacion</string>
+    <string name="menu">Menú</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="mensajes">Mensajes</string>
+    <string name="perfil">Mi Perfil</string>
 </resources>
