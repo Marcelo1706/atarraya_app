@@ -42,4 +42,6 @@
     <string name="notificaciones">Notificaciones</string>
     <string name="mensajes">Mensajes</string>
     <string name="perfil">Mi Perfil</string>
+    <string name="aula">CLASES 2020</string>
+    <string name="salir">Salir</string>
 </resources>

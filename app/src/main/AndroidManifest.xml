@@ -10,10 +10,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".calificaciones_activity"></activity>
+        <activity android:name=".calendario_activity" />
+        <activity android:name=".aulavirtual_activity" />
         <activity
             android:name=".menuNavegacion"
             android:label="@string/title_activity_menu_navegacion"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Login" />
         <activity android:name=".splash">
             <intent-filter>

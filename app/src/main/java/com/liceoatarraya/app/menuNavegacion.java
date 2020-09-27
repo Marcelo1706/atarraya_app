@@ -1,13 +1,17 @@
 package com.liceoatarraya.app;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -17,7 +21,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class menuNavegacion extends AppCompatActivity {
-
+    BottomNavigationView mbottomNavigationView;
     private AppBarConfiguration mAppBarConfiguration;
 
     @Override
@@ -26,14 +30,6 @@ public class menuNavegacion extends AppCompatActivity {
         setContentView(R.layout.activity_menu_navegacion);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -45,6 +41,33 @@ public class menuNavegacion extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+        /*
+        CÓDIGOS PARA MENU INFERIOR
+         */
+        mbottomNavigationView = (BottomNavigationView)findViewById(R.id.bottomNavigationView);
+        mbottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                //IF PARA CONTROLAR HACIA QUE ACTIVITY ME DEBE ENVIAR AL UTILIZAR EL MENU INFERIOR
+                if (item.getItemId()==R.id.menu_aulavirtual){
+                    startActivity(new Intent(getApplicationContext(), aulavirtual_activity.class));
+                    overridePendingTransition(0,0);
+                    return  true;
+
+                }
+                if (item.getItemId()==R.id.menu_calendario){
+                    startActivity(new Intent(getApplicationContext(), calendario_activity.class));
+                    overridePendingTransition(0,0);
+                    return  true;
+                }
+                if (item.getItemId()==R.id.menu_calificaciones){
+                    startActivity(new Intent(getApplicationContext(), calificaciones_activity.class));
+                    overridePendingTransition(0,0);
+                    return  true;
+                }
+                return true;
+            }
+        });
     }
 
     @Override
