@@ -35,7 +35,7 @@ public class menuNavegacion extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.clases, R.id.calendario, R.id.notas,R.id.mensajes,R.id.notificaciones,R.id.perfil,R.id.menu)
+                R.id.nav_home, R.id.clases, R.id.calendario, R.id.notas,R.id.mensajes,R.id.notificaciones,R.id.perfil,R.id.menu,R.id.salir)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -82,5 +82,9 @@ public class menuNavegacion extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public void onclick(MenuItem item) {
+        finish();
     }
 }
