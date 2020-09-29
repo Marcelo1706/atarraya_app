@@ -1,10 +1,15 @@
 package com.liceoatarraya.app;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.EditText;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -19,11 +24,14 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import java.util.Calendar;
 
 public class menuNavegacion extends AppCompatActivity {
     BottomNavigationView mbottomNavigationView;
     private AppBarConfiguration mAppBarConfiguration;
-
+    Button btnfecha;
+    EditText txt_fechamenu;
+    private int mYear, mMonth, mDay;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,6 +76,12 @@ public class menuNavegacion extends AppCompatActivity {
                 return true;
             }
         });
+        /*
+        CODIGOS PARA OPCION CALENDARIO EN FRAGMENT MENU
+         */
+        btnfecha=(Button)findViewById(R.id.btn_fecha);
+        txt_fechamenu=(EditText)findViewById(R.id.txt_fechamenu);
+        //ESTA LINEA ME DA ERROR btnfecha.setOnClickListener((OnClickListener) this);
     }
 
     @Override
@@ -83,8 +97,29 @@ public class menuNavegacion extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
-
+    //metodo onclick de opcion salir en navigation drawer
     public void onclick(MenuItem item) {
         finish();
+    }
+
+    public void onclick_btnmenu(View v) {
+        if (v == btnfecha) {
+
+            // Get Current Date
+            final Calendar c = Calendar.getInstance();
+            mYear = c.get(Calendar.YEAR);
+            mMonth = c.get(Calendar.MONTH);
+            mDay = c.get(Calendar.DAY_OF_MONTH);
+
+
+            DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+
+                        @Override
+                        public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                            txt_fechamenu.setText(dayOfMonth + "-" + (monthOfYear + 1) + "-" + year);
+                        }
+                    }, mYear, mMonth, mDay);
+            datePickerDialog.show();
+        }
     }
 }

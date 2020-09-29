@@ -44,4 +44,6 @@
     <string name="perfil">Mi Perfil</string>
     <string name="aula">CLASES 2020</string>
     <string name="salir">Salir</string>
+    <string name="avisomenu">Seleccione la fecha para ver los platillos disponibles</string>
+    <string name="mensaje_btnfecha">Elegir</string>
 </resources>
