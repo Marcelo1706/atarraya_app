@@ -59,7 +59,7 @@
     <fragment
         android:id="@+id/menu"
         android:name="com.liceoatarraya.app.Menu"
-        android:label="fragment_menu"
+        android:label="Menú"
         tools:layout="@layout/fragment_menu" />
     <fragment
         android:id="@+id/mensajes"
