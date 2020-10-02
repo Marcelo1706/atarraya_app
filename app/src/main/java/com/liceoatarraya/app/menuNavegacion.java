@@ -29,9 +29,7 @@ import java.util.Calendar;
 public class menuNavegacion extends AppCompatActivity {
     BottomNavigationView mbottomNavigationView;
     private AppBarConfiguration mAppBarConfiguration;
-    Button btnfecha;
-    EditText txt_fechamenu;
-    private int mYear, mMonth, mDay;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,45 +41,40 @@ public class menuNavegacion extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.clases, R.id.calendario, R.id.notas,R.id.mensajes,R.id.notificaciones,R.id.perfil,R.id.menu,R.id.salir)
+                R.id.nav_home, R.id.clases, R.id.calendario, R.id.notas, R.id.mensajes, R.id.notificaciones, R.id.perfil, R.id.menu, R.id.salir)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
         /*
         CÓDIGOS PARA MENU INFERIOR
          */
-        mbottomNavigationView = (BottomNavigationView)findViewById(R.id.bottomNavigationView);
+        mbottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigationView);
         mbottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 //IF PARA CONTROLAR HACIA QUE ACTIVITY ME DEBE ENVIAR AL UTILIZAR EL MENU INFERIOR
-                if (item.getItemId()==R.id.menu_aulavirtual){
+                if (item.getItemId() == R.id.menu_aulavirtual) {
                     startActivity(new Intent(getApplicationContext(), aulavirtual_activity.class));
-                    overridePendingTransition(0,0);
-                    return  true;
+                    overridePendingTransition(0, 0);
+                    return true;
 
                 }
-                if (item.getItemId()==R.id.menu_calendario){
+                if (item.getItemId() == R.id.menu_calendario) {
                     startActivity(new Intent(getApplicationContext(), calendario_activity.class));
-                    overridePendingTransition(0,0);
-                    return  true;
+                    overridePendingTransition(0, 0);
+                    return true;
                 }
-                if (item.getItemId()==R.id.menu_calificaciones){
+                if (item.getItemId() == R.id.menu_calificaciones) {
                     startActivity(new Intent(getApplicationContext(), calificaciones_activity.class));
-                    overridePendingTransition(0,0);
-                    return  true;
+                    overridePendingTransition(0, 0);
+                    return true;
                 }
                 return true;
             }
         });
-        /*
-        CODIGOS PARA OPCION CALENDARIO EN FRAGMENT MENU
-         */
-        btnfecha=(Button)findViewById(R.id.btn_fecha);
-        txt_fechamenu=(EditText)findViewById(R.id.txt_fechamenu);
-        //ESTA LINEA ME DA ERROR btnfecha.setOnClickListener((OnClickListener) this);
     }
 
     @Override
@@ -97,29 +90,9 @@ public class menuNavegacion extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
     //metodo onclick de opcion salir en navigation drawer
     public void onclick(MenuItem item) {
         finish();
-    }
-
-    public void onclick_btnmenu(View v) {
-        if (v == btnfecha) {
-
-            // Get Current Date
-            final Calendar c = Calendar.getInstance();
-            mYear = c.get(Calendar.YEAR);
-            mMonth = c.get(Calendar.MONTH);
-            mDay = c.get(Calendar.DAY_OF_MONTH);
-
-
-            DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
-
-                        @Override
-                        public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                            txt_fechamenu.setText(dayOfMonth + "-" + (monthOfYear + 1) + "-" + year);
-                        }
-                    }, mYear, mMonth, mDay);
-            datePickerDialog.show();
-        }
     }
 }
