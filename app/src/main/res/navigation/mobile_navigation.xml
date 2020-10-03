@@ -64,16 +64,16 @@
     <fragment
         android:id="@+id/mensajes"
         android:name="com.liceoatarraya.app.mensajes"
-        android:label="fragment_mensajes"
+        android:label="Mensajes"
         tools:layout="@layout/fragment_mensajes" />
     <fragment
         android:id="@+id/notificaciones"
         android:name="com.liceoatarraya.app.notificaciones"
-        android:label="fragment_notificaciones"
+        android:label="Notificaciones"
         tools:layout="@layout/fragment_notificaciones" />
     <fragment
         android:id="@+id/perfil"
         android:name="com.liceoatarraya.app.perfil"
-        android:label="fragment_perfil"
+        android:label="Mi perfil"
         tools:layout="@layout/fragment_perfil" />
 </navigation>
