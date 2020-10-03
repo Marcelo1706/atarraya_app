@@ -46,4 +46,7 @@
     <string name="salir">Salir</string>
     <string name="avisomenu">Seleccione la fecha para ver los platillos disponibles</string>
     <string name="mensaje_btnfecha">Elegir</string>
+    <string name="txtView_informacion">Por favor seleccione una fecha para conocer los platillos</string>
+    <string name="edtext_datein">SELECCIONE UNA FECHA</string>
+    <string name="btn_consultarmenu">CONSULTAR</string>
 </resources>

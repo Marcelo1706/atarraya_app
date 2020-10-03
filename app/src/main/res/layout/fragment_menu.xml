@@ -1,59 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:xmnls="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context=".Menu">
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout1"
+    <TextView
+        android:id="@+id/informacion"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/txtView_informacion"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/date_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="@string/edtext_datein"
+        android:inputType="none"/>
 
-        <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/btn_consultarmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text="@string/btn_consultarmenu"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="25dp"
-            android:text="@string/avisomenu"
-            android:textAlignment="center"
-            android:textColor="@color/oscuro"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/txt_fechamenu"
-            android:layout_width="253dp"
-            android:layout_height="51dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="88dp"
-            android:gravity="center"
-            android:hint="seleccione una fecha"
-            android:textSize="14sp" />
-
-        <Button
-            android:id="@+id/btn_fecha"
-            android:layout_width="126dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txt_fechamenu"
-            android:layout_alignBottom="@+id/txt_fechamenu"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="-50dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginBottom="1dp"
-            android:layout_toEndOf="@+id/txt_fechamenu"
-            android:text="@string/mensaje_btnfecha"
-            android:textSize="12sp"
-            android:onClick="onclick_btnmenu"/>
-
-
-    </RelativeLayout>
 </LinearLayout>
+

@@ -3,6 +3,7 @@ package com.liceoatarraya.app;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
@@ -24,15 +25,34 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 public class menuNavegacion extends AppCompatActivity {
+    EditText date_in;
     BottomNavigationView mbottomNavigationView;
     private AppBarConfiguration mAppBarConfiguration;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        /*DESCOMENTAR ESTA PARTE PARA REVISAR EL ERROR DEL DATEPICKER
+        //Cod para el datepicker del menu
+        date_in=findViewById(R.id.date_input);
+        date_in.setInputType(InputType.TYPE_NULL);
+
+        date_in.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                showDateDialog(date_in);
+            }
+        });
+        //Fin del Cod para el datepicker
+         */
+
         setContentView(R.layout.activity_menu_navegacion);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -76,7 +96,24 @@ public class menuNavegacion extends AppCompatActivity {
             }
         });
     }
+    /*METODO DEL DATEPICKER
+    private void showDateDialog(final EditText date_in) {
+        final Calendar calendar= Calendar.getInstance();
+        DatePickerDialog.OnDateSetListener dateSetListener=new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                calendar.set(Calendar.YEAR,year);
+                calendar.set(Calendar.MONTH,month);
+                calendar.set(Calendar.DAY_OF_MONTH,dayOfMonth);
+                SimpleDateFormat simpleDateFormat= new SimpleDateFormat("dd-MM-yy");
+                date_in.setText(simpleDateFormat.format(calendar.getTime()));
+            }
+        };
+        new DatePickerDialog(menuNavegacion.this,dateSetListener,calendar.get(calendar.YEAR),
+                calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH)).show();
 
+    }
+    */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
