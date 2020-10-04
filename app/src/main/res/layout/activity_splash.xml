@@ -10,7 +10,7 @@
     android:paddingTop="16dp"
     android:paddingEnd="64dp"
     android:paddingBottom="16dp"
-    tools:context=".splash">
+    tools:context=".layout.splash">
 
     <!-- Aún evaluo que opción sale mejor si dejarlo como background o como un Image view
     <ImageView

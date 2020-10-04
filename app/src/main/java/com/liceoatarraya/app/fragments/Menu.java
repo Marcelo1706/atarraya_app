@@ -1,4 +1,4 @@
-package com.liceoatarraya.app;
+package com.liceoatarraya.app.fragments;
 
 import android.os.Bundle;
 
@@ -8,13 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.liceoatarraya.app.R;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link Menu#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class Menu extends Fragment {
-
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -52,7 +53,9 @@ public class Menu extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+
         }
+
     }
 
     @Override

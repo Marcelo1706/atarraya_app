@@ -49,4 +49,8 @@
     <string name="txtView_informacion">Por favor seleccione una fecha para conocer los platillos</string>
     <string name="edtext_datein">SELECCIONE UNA FECHA</string>
     <string name="btn_consultarmenu">CONSULTAR</string>
+    <string name="mensajePregunta">¿Desea salir de la aplicación?</string>
+    <string name="tituloMensajeSalida">Salirde la App</string>
+    <string name="opcionSi">Si</string>
+    <string name="opcionNo">No</string>
 </resources>

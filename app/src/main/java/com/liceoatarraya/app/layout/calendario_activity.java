@@ -1,4 +1,4 @@
-package com.liceoatarraya.app;
+package com.liceoatarraya.app.layout;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.liceoatarraya.app.R;
 
 public class calendario_activity extends AppCompatActivity {
  BottomNavigationView calbottomNavigationView;
@@ -15,6 +16,7 @@ public class calendario_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calendario_activity);
+        setTitle("Calendario");
         calbottomNavigationView=(BottomNavigationView)findViewById(R.id.bnv_calendario);
         calbottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

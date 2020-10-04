@@ -49,31 +49,31 @@
         tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/notas"
-        android:name="com.liceoatarraya.app.notas"
+        android:name="com.liceoatarraya.app.fragments.notas"
         android:label="fragment_notas"
         tools:layout="@layout/fragment_notas" />
     <fragment
         android:id="@+id/configuracion"
-        android:name="com.liceoatarraya.app.SettingsFragment"
+        android:name="com.liceoatarraya.app.fragments.SettingsFragment"
         android:label="@string/config" />
     <fragment
         android:id="@+id/menu"
-        android:name="com.liceoatarraya.app.Menu"
+        android:name="com.liceoatarraya.app.fragments.Menu"
         android:label="Menú"
         tools:layout="@layout/fragment_menu" />
     <fragment
         android:id="@+id/mensajes"
-        android:name="com.liceoatarraya.app.mensajes"
+        android:name="com.liceoatarraya.app.fragments.mensajes"
         android:label="Mensajes"
         tools:layout="@layout/fragment_mensajes" />
     <fragment
         android:id="@+id/notificaciones"
-        android:name="com.liceoatarraya.app.notificaciones"
+        android:name="com.liceoatarraya.app.fragments.notificaciones"
         android:label="Notificaciones"
         tools:layout="@layout/fragment_notificaciones" />
     <fragment
         android:id="@+id/perfil"
-        android:name="com.liceoatarraya.app.perfil"
+        android:name="com.liceoatarraya.app.fragments.perfil"
         android:label="Mi perfil"
         tools:layout="@layout/fragment_perfil" />
 </navigation>

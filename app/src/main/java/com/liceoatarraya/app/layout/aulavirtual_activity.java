@@ -1,4 +1,4 @@
-package com.liceoatarraya.app;
+package com.liceoatarraya.app.layout;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.liceoatarraya.app.R;
 
 public class aulavirtual_activity extends AppCompatActivity {
 BottomNavigationView avbottomNavigationView;
@@ -15,6 +16,7 @@ BottomNavigationView avbottomNavigationView;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.aulavirtual_activity);
+        setTitle("Aula virtual");
         avbottomNavigationView=(BottomNavigationView)findViewById(R.id.bnv_aulavirtual);
         avbottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

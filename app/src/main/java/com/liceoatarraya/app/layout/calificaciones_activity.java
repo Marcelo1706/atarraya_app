@@ -1,4 +1,4 @@
-package com.liceoatarraya.app;
+package com.liceoatarraya.app.layout;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.liceoatarraya.app.R;
 
 public class calificaciones_activity extends AppCompatActivity {
 BottomNavigationView calibottomNavigationView;
@@ -15,6 +16,7 @@ BottomNavigationView calibottomNavigationView;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calificaciones_activity);
+        setTitle("Calificaciones");
         calibottomNavigationView=(BottomNavigationView)findViewById(R.id.bnv_calificaciones);
         calibottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

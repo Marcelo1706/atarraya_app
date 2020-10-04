@@ -10,15 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".calificaciones_activity"></activity>
-        <activity android:name=".calendario_activity" />
-        <activity android:name=".aulavirtual_activity" />
+        <activity android:name=".layout.calificaciones_activity"></activity>
+        <activity android:name=".layout.calendario_activity" />
+        <activity android:name=".layout.aulavirtual_activity" />
         <activity
-            android:name=".menuNavegacion"
+            android:name=".layout.menuNavegacion"
             android:label="@string/title_activity_menu_navegacion"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Login" />
-        <activity android:name=".splash">
+        <activity android:name=".layout.Login" />
+        <activity android:name=".layout.splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

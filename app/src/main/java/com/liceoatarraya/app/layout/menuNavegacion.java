@@ -1,21 +1,14 @@
-package com.liceoatarraya.app;
+package com.liceoatarraya.app.layout;
 
-import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.InputType;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.Menu;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.DatePicker;
 import android.widget.EditText;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
+import com.liceoatarraya.app.R;
 
 import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
@@ -26,10 +19,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-
 public class menuNavegacion extends AppCompatActivity {
     EditText date_in;
     BottomNavigationView mbottomNavigationView;
@@ -38,20 +27,6 @@ public class menuNavegacion extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        /*DESCOMENTAR ESTA PARTE PARA REVISAR EL ERROR DEL DATEPICKER
-        //Cod para el datepicker del menu
-        date_in=findViewById(R.id.date_input);
-        date_in.setInputType(InputType.TYPE_NULL);
-
-        date_in.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                showDateDialog(date_in);
-            }
-        });
-        //Fin del Cod para el datepicker
-         */
 
         setContentView(R.layout.activity_menu_navegacion);
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -61,7 +36,7 @@ public class menuNavegacion extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.clases, R.id.calendario, R.id.notas, R.id.mensajes, R.id.notificaciones, R.id.perfil, R.id.menu, R.id.salir)
+                R.id.nav_home, R.id.mensajes, R.id.notificaciones, R.id.perfil, R.id.menu, R.id.salir)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -95,6 +70,21 @@ public class menuNavegacion extends AppCompatActivity {
                 return true;
             }
         });
+        /*DESCOMENTAR ESTA PARTE PARA REVISAR EL ERROR DEL DATEPICKER
+        //Cod para el datepicker del menu
+        date_in=findViewById(R.id.date_input);
+        date_in.setInputType(InputType.TYPE_NULL);
+
+        date_in.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                showDateDialog(date_in);
+            }
+        });
+        //Fin del Cod para el datepicker
+         */
+
     }
     /*METODO DEL DATEPICKER
     private void showDateDialog(final EditText date_in) {
