@@ -6,35 +6,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.Menu">
-
     <TextView
         android:id="@+id/informacion"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginRight="15dp"
         android:text="@string/txtView_informacion"
+        android:textSize="15sp"
         android:textAlignment="center"
-        android:textSize="20sp" />
-    <EditText
-        android:id="@+id/date_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:hint="@string/edtext_datein"
-        android:inputType="none"/>
-
-    <Button
-        android:id="@+id/btn_consultarmenu"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
-        android:text="@string/btn_consultarmenu"/>
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
+        <EditText
+            android:id="@+id/date_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/edtext_datein"
+            android:inputType="none" />
+
+        <Button
+            android:id="@+id/btn_consultarmenu"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/atarraya"
+            android:text="@string/btn_consultarmenu"
+            android:textColor="@color/blanco" />
+    </LinearLayout>
 </LinearLayout>
-

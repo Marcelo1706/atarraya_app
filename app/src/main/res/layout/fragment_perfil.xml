@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    tools:context=".layout.menuNavegacion">
+    tools:context=".layout.menuNavegacion"
+    android:background="@color/blanco">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -41,10 +42,20 @@
                 android:textSize="18sp"></TextView>
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/iv_fotoperfil"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                tools:src="@drawable/ic_menu_camera" />
+            <Button
+            android:id="@+id/btn_seleccionarfoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar foto"/>
+            <Button
+                android:id="@+id/btn_tomarfoto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:src="@tools:sample/avatars" />
+                android:text="Tomar FOTO"/>
         </LinearLayout>
             <LinearLayout
                 android:id="@+id/linlay_opciones"
@@ -57,13 +68,43 @@
                     android:layout_height="wrap_content"
                     android:text="Nombre de Usuario"
                     android:textColor="@color/oscuro"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp" />
                 <EditText
                     android:id="@+id/edtext_usuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="5dip"
                     android:background="@drawable/rounded_edittext_focused"/>
+                <TextView
+                    android:id="@+id/txt_correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Correo Registrado"
+                    android:textColor="@color/oscuro"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/edtext_correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext_focused"
+                    android:padding="5dip"
+                    android:enabled="false"/>
+                <TextView
+                    android:id="@+id/txt_grado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Grado Actual"
+                    android:textColor="@color/oscuro"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/edtext_grado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext_focused"
+                    android:padding="5dip"
+                    android:enabled="false"/>
                 <TextView
                     android:id="@+id/txt_Claveactual"
                     android:layout_width="match_parent"
@@ -77,7 +118,7 @@
                     android:id="@+id/edtext_ClaveActual"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/edtext_states"
+                    android:background="@drawable/rounded_edittext_focused"
                     android:padding="5dip" />
 
                 <TextView
@@ -93,7 +134,7 @@
                     android:id="@+id/edtext_nuevacontra"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/edtext_states"
+                    android:background="@drawable/rounded_edittext_focused"
                     android:padding="5dip" />
 
                 <TextView
@@ -109,7 +150,7 @@
                     android:id="@+id/edtext_confirmarcontra"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/edtext_states"
+                    android:background="@drawable/rounded_edittext_focused"
                     android:padding="5dip" />
             </LinearLayout>
         <Button
