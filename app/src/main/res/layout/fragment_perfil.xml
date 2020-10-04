@@ -24,6 +24,7 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="15dp"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -38,6 +39,12 @@
                 android:textAlignment="center"
                 android:textColor="@color/oscuro"
                 android:textSize="18sp"></TextView>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@tools:sample/avatars" />
         </LinearLayout>
             <LinearLayout
                 android:id="@+id/linlay_opciones"
