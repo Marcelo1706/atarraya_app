@@ -9,8 +9,10 @@ import android.widget.EditText;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.liceoatarraya.app.R;
+import com.liceoatarraya.app.cerrarApp;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.DialogFragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -120,6 +122,11 @@ public class menuNavegacion extends AppCompatActivity {
 
     //metodo onclick de opcion salir en navigation drawer
     public void onclick(MenuItem item) {
-        finish();
+        mostrarDialogoSalir();
+    }
+
+    private void mostrarDialogoSalir() {
+        DialogFragment dialogo=new cerrarApp();
+        dialogo.show(getSupportFragmentManager(),"salirapp");
     }
 }
