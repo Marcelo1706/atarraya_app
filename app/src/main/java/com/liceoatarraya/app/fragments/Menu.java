@@ -1,14 +1,21 @@
 package com.liceoatarraya.app.fragments;
 
+import android.app.DatePickerDialog;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.InputType;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.DatePicker;
+import android.widget.EditText;
 
 import com.liceoatarraya.app.R;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +23,7 @@ import com.liceoatarraya.app.R;
  * create an instance of this fragment.
  */
 public class Menu extends Fragment {
+    EditText date_in;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -53,9 +61,32 @@ public class Menu extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+            date_in= date_in.findViewById(R.id.txt_dateInput);
+            date_in.setInputType(InputType.TYPE_NULL);
+            date_in.setOnClickListener(new View.OnClickListener(){
+
+                @Override
+                public void onClick(View v) {
+                    showDateDialog(date_in);
+                }
+            });
 
         }
-
+    }
+    private void showDateDialog(final EditText date_in) {
+        final Calendar calendar= Calendar.getInstance();
+        DatePickerDialog.OnDateSetListener dateSetListener=new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                calendar.set(Calendar.YEAR,year);
+                calendar.set(Calendar.MONTH,month);
+                calendar.set(Calendar.DAY_OF_MONTH,dayOfMonth);
+                SimpleDateFormat simpleDateFormat= new SimpleDateFormat("dd-MM-yy");
+                date_in.setText(simpleDateFormat.format(calendar.getTime()));
+            }
+        };
+        new DatePickerDialog(getActivity().getApplicationContext(),dateSetListener,calendar.get(calendar.YEAR),
+                calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH)).show();
     }
 
     @Override
@@ -63,5 +94,6 @@ public class Menu extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_menu, container, false);
+
     }
 }
