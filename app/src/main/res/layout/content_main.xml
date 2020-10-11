@@ -10,7 +10,8 @@
     android:fitsSystemWindows="true">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -25,16 +26,15 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:navGraph="@navigation/mobile_navigation" />
-
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/bottomNavigationView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:background="@color/oscuro"
-                app:itemIconTint="@color/blanco"
-                app:itemTextColor="@color/blanco"
-                app:menu="@menu/main_menu" />
         </LinearLayout>
     </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/oscuro"
+        app:itemIconTint="@color/blanco"
+        app:itemTextColor="@color/blanco"
+        app:menu="@menu/main_menu" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
