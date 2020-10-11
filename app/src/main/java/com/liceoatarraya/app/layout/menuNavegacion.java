@@ -42,7 +42,7 @@ import androidx.appcompat.widget.Toolbar;
 import java.io.File;
 
 public class menuNavegacion extends AppCompatActivity {
-   /* EditText date_in;
+   /*
     ImageView ivFotoperfil;
     Button Btnseleccionarfoto;
     Button Btntomarfoto;
@@ -126,43 +126,10 @@ public class menuNavegacion extends AppCompatActivity {
                 seleccionarImagen();
             }
         });*/
-
-        /*DESCOMENTAR ESTA PARTE PARA REVISAR EL ERROR DEL DATEPICKER
-        //Cod para el datepicker del menu
-        date_in=findViewById(R.id.date_input);
-        date_in.setInputType(InputType.TYPE_NULL);
-
-        date_in.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                showDateDialog(date_in);
-            }
-        });
-        //Fin del Cod para el datepicker
-         */
-
     }
 
 
-    /*METODO DEL DATEPICKER
-        private void showDateDialog(final EditText date_in) {
-            final Calendar calendar= Calendar.getInstance();
-            DatePickerDialog.OnDateSetListener dateSetListener=new DatePickerDialog.OnDateSetListener() {
-                @Override
-                public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                    calendar.set(Calendar.YEAR,year);
-                    calendar.set(Calendar.MONTH,month);
-                    calendar.set(Calendar.DAY_OF_MONTH,dayOfMonth);
-                    SimpleDateFormat simpleDateFormat= new SimpleDateFormat("dd-MM-yy");
-                    date_in.setText(simpleDateFormat.format(calendar.getTime()));
-                }
-            };
-            new DatePickerDialog(menuNavegacion.this,dateSetListener,calendar.get(calendar.YEAR),
-                    calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH)).show();
 
-        }
-        */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
