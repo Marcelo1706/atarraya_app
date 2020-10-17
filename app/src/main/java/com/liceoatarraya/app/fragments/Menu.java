@@ -9,8 +9,12 @@ import android.text.InputType;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.liceoatarraya.app.R;
 
@@ -23,7 +27,8 @@ import java.util.Calendar;
  * create an instance of this fragment.
  */
 public class Menu extends Fragment {
-    EditText date_in;
+    TextView date_in;
+    ImageButton date_button;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -62,18 +67,18 @@ public class Menu extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
             date_in= date_in.findViewById(R.id.txt_dateInput);
-            date_in.setInputType(InputType.TYPE_NULL);
-            date_in.setOnClickListener(new View.OnClickListener(){
-
+            date_button= date_button.findViewById(R.id.btn_consultarmenu);
+            date_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    showDateDialog(date_in);
+                    showDateDialog(date_button);
                 }
             });
 
         }
     }
-    private void showDateDialog(final EditText date_in) {
+
+    private void showDateDialog(ImageButton date_button) {
         final Calendar calendar= Calendar.getInstance();
         DatePickerDialog.OnDateSetListener dateSetListener=new DatePickerDialog.OnDateSetListener() {
             @Override
@@ -88,6 +93,7 @@ public class Menu extends Fragment {
         new DatePickerDialog(getActivity().getApplicationContext(),dateSetListener,calendar.get(calendar.YEAR),
                 calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH)).show();
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

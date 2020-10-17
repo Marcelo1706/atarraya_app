@@ -42,19 +42,6 @@ import androidx.appcompat.widget.Toolbar;
 import java.io.File;
 
 public class menuNavegacion extends AppCompatActivity {
-   /*
-    ImageView ivFotoperfil;
-    Button Btnseleccionarfoto;
-    Button Btntomarfoto;
-    Uri imagenUri;
-    int TOMAR_FOTO=100;
-    int SELECT_IMAGEN=200;
-    String CARPETA_RAIZ="MisFotosAtaraya";
-    String CARPETA_IMAGENES="imagenes";
-    String RUTA_IMAGEN= CARPETA_RAIZ + CARPETA_IMAGENES;
-    String path;*/
-
-
     BottomNavigationView mbottomNavigationView;
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -105,27 +92,6 @@ public class menuNavegacion extends AppCompatActivity {
                 return true;
             }
         });
-        /*COD PARA CAMBIAR FOTO PERFIL
-        ivFotoperfil=findViewById(R.id.iv_fotoperfil);
-        Btnseleccionarfoto=findViewById(R.id.btn_seleccionarfoto);
-        Btntomarfoto=findViewById(R.id.btn_tomarfoto);
-        if (ContextCompat.checkSelfPermission(menuNavegacion.this, Manifest.permission.CAMERA)!= PackageManager.PERMISSION_GRANTED){
-            ActivityCompat.requestPermissions(menuNavegacion.this,
-                    new String[]{Manifest.permission.CAMERA,
-                            Manifest.permission.WRITE_EXTERNAL_STORAGE},0);
-        }
-        Btntomarfoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                tomarfoto();
-            }
-        });
-        Btnseleccionarfoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                seleccionarImagen();
-            }
-        });*/
     }
 
 
@@ -153,52 +119,4 @@ public class menuNavegacion extends AppCompatActivity {
         DialogFragment dialogo=new cerrarApp();
         dialogo.show(getSupportFragmentManager(),"salirapp");
     }
-    /*public void tomarfoto() {
-        String nombreImagen="";
-        File fileImagen = new File(Environment.getExternalStorageDirectory(),RUTA_IMAGEN);
-        boolean isCreada = fileImagen.exists();
-        if (isCreada==false){
-            isCreada=fileImagen.mkdirs();
-        }
-        if (isCreada==true){
-            nombreImagen=(System.currentTimeMillis()/1000)+".jpg";
-        }
-        path=Environment.getExternalStorageDirectory()+File.separator+RUTA_IMAGEN+File.separator+nombreImagen;
-        File imagen = new File (path);
-        Intent intent = null;
-        intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.N){
-            String authorities=this.getPackageName()+".provider";
-            Uri imagenUri = FileProvider.getUriForFile(this,authorities,imagen);
-            intent.putExtra(MediaStore.EXTRA_OUTPUT,imagenUri);
-        }else{
-            intent.putExtra(MediaStore.EXTRA_OUTPUT,Uri.fromFile(imagen));
-        }
-        startActivityForResult (intent, TOMAR_FOTO);
-    }
-
-    public void seleccionarImagen(){
-        Intent galeria = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
-        startActivityForResult(galeria,SELECT_IMAGEN);
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if(resultCode==RESULT_OK && requestCode==SELECT_IMAGEN){
-            imagenUri=data.getData();
-            ivFotoperfil.setImageURI(imagenUri);
-        }else if (resultCode == RESULT_OK && requestCode ==TOMAR_FOTO){
-            MediaScannerConnection.scanFile(menuNavegacion.this, new String[]{path}, null, new MediaScannerConnection.OnScanCompletedListener() {
-                @Override
-                public void onScanCompleted(String path, Uri uri) {
-
-                }
-            });
-            Bitmap bitmap = BitmapFactory.decodeFile(path);
-            ivFotoperfil.setImageBitmap(bitmap);
-        }
-
-    }*/
 }
