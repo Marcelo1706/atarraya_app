@@ -45,6 +45,7 @@ public class menuNavegacion extends AppCompatActivity {
     BottomNavigationView mbottomNavigationView;
     private AppBarConfiguration mAppBarConfiguration;
 
+
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
