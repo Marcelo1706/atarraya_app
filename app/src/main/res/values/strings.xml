@@ -53,4 +53,5 @@
     <string name="tituloMensajeSalida">Salirde la App</string>
     <string name="opcionSi">Si</string>
     <string name="opcionNo">No</string>
+    <string name="rol">Seleccione su rol</string>
 </resources>
