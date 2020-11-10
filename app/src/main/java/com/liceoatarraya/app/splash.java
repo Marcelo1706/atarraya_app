@@ -10,6 +10,8 @@ import android.os.Looper;
 import android.view.WindowInsets;
 import android.view.WindowManager;
 
+import com.liceoatarraya.app.layout.Login;
+
 import java.util.Objects;
 
 public class splash extends AppCompatActivity {

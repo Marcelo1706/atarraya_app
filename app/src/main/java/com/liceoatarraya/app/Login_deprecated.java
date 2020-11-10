@@ -14,7 +14,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -32,7 +31,7 @@ import static android.Manifest.permission.CAMERA;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 import static android.os.Environment.getExternalStorageDirectory;
 
-public class Login extends AppCompatActivity {
+public class Login_deprecated extends AppCompatActivity {
 
     private static final int MIS_PERMISOS = 100;
     private SharedPreferences myPreferences;
@@ -53,7 +52,7 @@ public class Login extends AppCompatActivity {
         spinner.setAdapter(adapter);
 
         //Solicitud de Permisos
-        myPreferences = PreferenceManager.getDefaultSharedPreferences(Login.this);
+        myPreferences = PreferenceManager.getDefaultSharedPreferences(Login_deprecated.this);
 
         solicitaPermisosVersionesSuperiores();
 

@@ -23,7 +23,7 @@
             android:name=".layout.menuNavegacion"
             android:label="@string/title_activity_menu_navegacion"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="Login" />
+        <activity android:name=".layout.Login" />
         <activity android:name="splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
