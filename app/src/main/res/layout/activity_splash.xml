@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_inicio"
@@ -10,7 +10,8 @@
     android:paddingTop="16dp"
     android:paddingEnd="64dp"
     android:paddingBottom="16dp"
-    tools:context=".layout.splash">
+    tools:context=".splash">
+
 
     <!-- Aún evaluo que opción sale mejor si dejarlo como background o como un Image view
     <ImageView
@@ -18,4 +19,18 @@
          android:layout_height="715dp"
          android:layout_centerInParent="true"
          android:src="@drawable/splash" />-->
-</RelativeLayout>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="serif"
+        android:text="@string/nombreLiceo"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

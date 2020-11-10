@@ -46,11 +46,18 @@
     <string name="salir">Salir</string>
     <string name="avisomenu">Seleccione la fecha para ver los platillos disponibles</string>
     <string name="mensaje_btnfecha">Elegir</string>
-    <string name="txtView_informacion">Por favor seleccione una fecha para conocer los platillos</string>
-    <string name="edtext_datein">SELECCIONE UNA FECHA</string>
-    <string name="btn_consultarmenu">CONSULTAR</string>
+    <string name="nombreLiceo">Liceo Evangélico \n\"La Atarraya\"</string>
+    <string name="logo_atarraya">logo_atarraya</string>
+    <string name="slogan">Con Fe y Educación forjas tu destino</string>
+    <string name="numUsuarioet">Número de Usuario</string>
+    <string name="btnLogin">Iniciar Sesión</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="mantener_sesi_n_iniciada">Mantener Sesión Iniciada</string>
+    <string name="txtView_informacion">Información</string>
+    <string name="edtext_datein">Date In</string>
+    <string name="btn_consultarmenu">Consultar Menú</string>
     <string name="mensajePregunta">¿Desea salir de la aplicación?</string>
-    <string name="tituloMensajeSalida">Salirde la App</string>
-    <string name="opcionSi">Si</string>
+    <string name="tituloMensajeSalida">Cerrar Aplicación</string>
+    <string name="opcionSi">Sí</string>
     <string name="opcionNo">No</string>
 </resources>
