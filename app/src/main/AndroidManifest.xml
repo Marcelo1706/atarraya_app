@@ -5,6 +5,8 @@
     <uses-permission android:name="android.hardware.Camera" android:required="true"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -14,15 +16,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".layout.calificaciones_activity"></activity>
+        <activity android:name=".layout.calificaciones_activity" />
         <activity android:name=".layout.calendario_activity" />
         <activity android:name=".layout.aulavirtual_activity" />
         <activity
             android:name=".layout.menuNavegacion"
             android:label="@string/title_activity_menu_navegacion"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".layout.Login" />
-        <activity android:name=".layout.splash">
+        <activity android:name="Login" />
+        <activity android:name="splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
