@@ -60,4 +60,5 @@
     <string name="tituloMensajeSalida">Cerrar Aplicación</string>
     <string name="opcionSi">Sí</string>
     <string name="opcionNo">No</string>
+    <string name="rol">Seleccione su rol</string>
 </resources>

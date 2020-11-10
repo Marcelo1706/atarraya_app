@@ -68,17 +68,24 @@ public class Menu extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
             date_in= date_in.findViewById(R.id.txt_dateInput);
             date_button= date_button.findViewById(R.id.btn_consultarmenu);
-            date_button.setOnClickListener(new View.OnClickListener() {
+
+            date_in.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    showDateDialog(date_in);
+                }
+            });
+            /*date_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     showDateDialog(date_button);
                 }
             });
-
+            */
         }
     }
 
-    private void showDateDialog(ImageButton date_button) {
+    private void showDateDialog(final TextView date_in) {
         final Calendar calendar= Calendar.getInstance();
         DatePickerDialog.OnDateSetListener dateSetListener=new DatePickerDialog.OnDateSetListener() {
             @Override
@@ -93,7 +100,6 @@ public class Menu extends Fragment {
         new DatePickerDialog(getActivity().getApplicationContext(),dateSetListener,calendar.get(calendar.YEAR),
                 calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH)).show();
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
