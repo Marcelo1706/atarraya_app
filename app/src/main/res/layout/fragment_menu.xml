@@ -63,6 +63,17 @@
                 android:background="@color/atarraya"
                 android:text="Consultar menú"
                 android:textColor="@color/blanco" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Platillos disponibles"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"/>
+            <ListView
+                android:id="@+id/ltv_comidadisponible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"/>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

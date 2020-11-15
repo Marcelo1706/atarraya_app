@@ -83,6 +83,7 @@ public class calendario_activity extends AppCompatActivity implements CalendarVi
                             bundle.putInt("mes",mes);
                             bundle.putInt("anio",anio);
                             intent.putExtras(bundle);
+                            startActivity(intent);
                         }else{
                             return;
                         }
