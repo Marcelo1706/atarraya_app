@@ -86,7 +86,7 @@ public class perfil extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-        //COD PARA CAMBIAR FOTO PERFIL
+        /*COD PARA CAMBIAR FOTO PERFIL
         ivFotoperfil= ivFotoperfil.findViewById(R.id.iv_fotoperfil);
         Btnseleccionarfoto=Btnseleccionarfoto.findViewById(R.id.btn_seleccionarfoto);
         Btntomarfoto=Btntomarfoto.findViewById(R.id.btn_tomarfoto);
@@ -135,7 +135,7 @@ public class perfil extends Fragment {
         }else{
             intent.putExtra(MediaStore.EXTRA_OUTPUT,Uri.fromFile(imagen));
         }
-        startActivityForResult (intent, TOMAR_FOTO);
+        startActivityForResult (intent, TOMAR_FOTO);*/
     }
 
     @Override

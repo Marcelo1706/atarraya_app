@@ -54,7 +54,7 @@
     <string name="contrase_a">Contraseña</string>
     <string name="mantener_sesi_n_iniciada">Mantener Sesión Iniciada</string>
     <string name="txtView_informacion">Información</string>
-    <string name="edtext_datein">Date In</string>
+    <string name="edtext_datein">Seleccione una fecha</string>
     <string name="btn_consultarmenu">Consultar Menú</string>
     <string name="mensajePregunta">¿Desea salir de la aplicación?</string>
     <string name="tituloMensajeSalida">Cerrar Aplicación</string>
