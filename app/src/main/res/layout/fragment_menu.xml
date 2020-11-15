@@ -55,25 +55,34 @@
                     android:background="@color/atarraya"
                     android:src="@drawable/ic_food" />
             </LinearLayout>
-            <Button
-                android:id="@+id/enviar_datos"
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:background="@color/atarraya"
-                android:text="Consultar menú"
-                android:textColor="@color/blanco" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Platillos disponibles"
-                android:layout_marginTop="15dp"
-                android:textSize="15sp"/>
-            <ListView
-                android:id="@+id/ltv_comidadisponible"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="15dp"/>
+                android:layout_height="509dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/enviar_datos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/atarraya"
+                    android:text="Consultar menú"
+                    android:textColor="@color/blanco" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Platillos disponibles"
+                    android:textSize="15sp" />
+
+                <ListView
+                    android:id="@+id/ltv_comidadisponible"
+                    android:layout_width="match_parent"
+                    android:layout_height="456dp"
+                    android:layout_marginTop="15dp" />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

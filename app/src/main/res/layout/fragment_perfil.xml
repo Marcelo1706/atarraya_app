@@ -34,7 +34,7 @@
                 android:text="Actualizar perfil"
                 android:textAlignment="center"
                 android:textColor="@color/oscuro"
-                android:textSize="18sp"></TextView>
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/iv_fotoperfil"

@@ -12,87 +12,122 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="25dp">
+        <TextView
+            android:id="@+id/tv_nombreevento"
+            android:text="Ingrese el nombre del evento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/oscuro"
+            android:textSize="18sp"/>
         <EditText
             android:id="@+id/edt_nombreEvento"
-            android:hint="Ingrese el nombre del evento"
+            android:hint="..."
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <EditText
-            android:id="@+id/edt_ubicacion"
-            android:hint="Ingrese la ubicación del evento"
-            android:layout_below="@id/edt_nombreEvento"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nombreevento"
+            android:padding="5dip"
+            android:background="@drawable/rounded_edittext_focused"/>
         <TextView
             android:id="@+id/tv_desde"
             android:text="Fecha Inicio"
-            android:layout_below="@id/edt_ubicacion"
+            android:layout_below="@id/edt_nombreEvento"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <EditText
+            android:layout_height="wrap_content"
+            android:textColor="@color/oscuro"
+            android:textSize="18sp"/>
+         <EditText
             android:id="@+id/edt_fechadesde"
             android:layout_below="@id/tv_desde"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="date"/>
+             android:padding="5dip"
+             android:background="@drawable/rounded_edittext_focused"/>
         <TextView
             android:id="@+id/tv_horainicio"
             android:text="Hora Inicio"
             android:layout_below="@id/edt_fechadesde"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textColor="@color/oscuro"
+            android:textSize="18sp"/>
         <EditText
             android:id="@+id/edt_horainicio"
             android:layout_below="@id/tv_horainicio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="time"/>
+            android:inputType="time"
+            android:padding="5dip"
+            android:background="@drawable/rounded_edittext_focused"/>
         <TextView
             android:id="@+id/tv_hasta"
             android:text="Fecha Final"
             android:layout_below="@id/edt_horainicio"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textColor="@color/oscuro"
+            android:textSize="18sp"/>
         <EditText
             android:id="@+id/edt_fechahasta"
             android:layout_below="@id/tv_hasta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="date"/>
+            android:padding="5dip"
+            android:background="@drawable/rounded_edittext_focused"/>
         <TextView
             android:id="@+id/tv_horafinal"
             android:text="Hora Final"
             android:layout_below="@id/edt_fechahasta"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textColor="@color/oscuro"
+            android:textSize="18sp"/>
         <EditText
             android:id="@+id/edt_horafinal"
             android:layout_below="@id/tv_horafinal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="time"/>
+            android:inputType="time"
+            android:padding="5dip"
+            android:background="@drawable/rounded_edittext_focused"/>
+        <TextView
+            android:id="@+id/tv_desc_evento"
+            android:text="Descripción del evento"
+            android:layout_below="@id/edt_horafinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/oscuro"
+            android:textSize="18sp"/>
         <EditText
             android:id="@+id/edt_descripcion"
-            android:hint="Descripción"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/edt_horafinal"/>
+            android:layout_below="@id/tv_desc_evento"
+            android:padding="5dip"
+            android:background="@drawable/rounded_edittext_focused"/>
     </LinearLayout>
-        <Button
-            android:id="@+id/btn_guardarevento"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/ll_inputs"
-            android:text="Guardar"/>
 
-        <Button
-            android:id="@+id/btn_cancelarevento"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignBottom="@id/btn_guardarevento"
-            android:layout_alignEnd="@id/btn_guardarevento"
-            android:text="Cancelar" />
+    <Button
+        android:id="@+id/btn_guardarevento"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_inputs"
+        android:layout_marginTop="50dp"
+        android:background="#09A50F"
+        android:text="Guardar"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_cancelarevento"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/btn_guardarevento"
+        android:layout_alignBottom="@id/btn_guardarevento"
+        android:layout_alignParentRight="true"
+        android:text="Cancelar"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:background="#E91E63"/>
 
 
 
