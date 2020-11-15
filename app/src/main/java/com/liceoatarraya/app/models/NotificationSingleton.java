@@ -29,18 +29,15 @@ public class NotificationSingleton {
     }
 
     private NotificationSingleton() {
-        addToList(new NotificationModel("1", "N1", new Date()));
-        addToList(new NotificationModel("1", "N2", new Date()));
-        addToList(new NotificationModel("1", "N3", new Date()));
-        addToList(new NotificationModel("1", "N4", new Date()));
-        addToList(new NotificationModel("1", "N5", new Date()));
-        addToList(new NotificationModel("1", "N6", new Date()));
-        addToList(new NotificationModel("1", "N7", new Date()));
-        addToList(new NotificationModel("1", "N8", new Date()));
-        addToList(new NotificationModel("1", "N9", new Date()));
-        addToList(new NotificationModel("1", "N10", new Date()));
-        addToList(new NotificationModel("1", "N11", new Date()));
-        addToList(new NotificationModel("1", "N12", new Date()));
+        addToList(new NotificationModel("1", "Se ha ingresado una tarea", new Date()));
+        addToList(new NotificationModel("1", "Se ha ingresado una tarea", new Date()));
+        addToList(new NotificationModel("1", "Se ha ingresado una tarea", new Date()));
+        addToList(new NotificationModel("1", "Se ha ingresado una tarea", new Date()));
+        addToList(new NotificationModel("1", "Se ha ingresado una tarea", new Date()));
+        addToList(new NotificationModel("1", "Se ha ingresado una tarea", new Date()));
+        addToList(new NotificationModel("1", "Se ha ingresado una tarea", new Date()));
+        addToList(new NotificationModel("1", "Se ha ingresado una tarea", new Date()));
+        addToList(new NotificationModel("1", "Se ha ingresado una tarea", new Date()));
     }
 
     public static NotificationSingleton getInstance() {

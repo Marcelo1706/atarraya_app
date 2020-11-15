@@ -7,8 +7,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import com.liceoatarraya.app.R;
+import com.liceoatarraya.app.adapters.MessageAdapter;
+import com.liceoatarraya.app.adapters.NotificationAdapter;
+import com.liceoatarraya.app.models.MessageSingleton;
+import com.liceoatarraya.app.models.NotificationSingleton;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -21,6 +26,8 @@ public class mensajes extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    ListView messageList;
+    MessageAdapter messageAdapter;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -61,6 +68,11 @@ public class mensajes extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mensajes, container, false);
+        View view = inflater.inflate(R.layout.fragment_mensajes, container, false);
+        messageList = view.findViewById(R.id.messageList);
+        MessageSingleton data = MessageSingleton.getInstance();
+        messageAdapter = new MessageAdapter(getActivity(), data.getMessages());
+        messageList.setAdapter(messageAdapter);
+        return view;
     }
 }
