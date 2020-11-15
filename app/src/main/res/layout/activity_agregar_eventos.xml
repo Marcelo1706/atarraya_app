@@ -6,6 +6,10 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     tools:context=".layout.agregarEventos">
+    <ScrollView
+        android:id="@+id/sv_inputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:id="@+id/ll_inputs"
         android:layout_width="match_parent"
@@ -55,7 +59,6 @@
             android:layout_below="@id/tv_horainicio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="time"
             android:padding="5dip"
             android:background="@drawable/rounded_edittext_focused"/>
         <TextView
@@ -86,7 +89,6 @@
             android:layout_below="@id/tv_horafinal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="time"
             android:padding="5dip"
             android:background="@drawable/rounded_edittext_focused"/>
         <TextView
@@ -105,12 +107,12 @@
             android:padding="5dip"
             android:background="@drawable/rounded_edittext_focused"/>
     </LinearLayout>
-
+    </ScrollView>
     <Button
         android:id="@+id/btn_guardarevento"
         android:layout_width="129dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/ll_inputs"
+        android:layout_below="@id/sv_inputs"
         android:layout_marginTop="50dp"
         android:background="#09A50F"
         android:text="Guardar"
