@@ -9,7 +9,7 @@ import java.util.List;
 public class MessageSingleton {
     private static MessageSingleton instance;
     private HashMap<String, MessageModel> list = new HashMap<>();
-    ;
+    
 
     public HashMap<String, MessageModel> getList() {
         return list;

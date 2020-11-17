@@ -19,7 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".layout.ver_eventos_calendario"></activity>
+        <activity android:name=".ChatActivity"></activity>
+        <activity android:name=".layout.ver_eventos_calendario" />
         <activity android:name=".layout.agregarEventos" />
         <activity android:name=".layout.calificaciones_activity" />
         <activity android:name=".layout.calendario_activity" />
