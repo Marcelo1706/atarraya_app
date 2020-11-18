@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xmnls="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home_maestro"
+        android:icon="@drawable/ic_home_white"
+        android:title="Inicio"
+        android:orderInCategory="1"
+        xmnls:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/calendario_maestro"
+        android:icon="@drawable/ic_btncalendar"
+        android:title="Calendario"
+        android:orderInCategory="2"
+        xmnls:showAsAction="never"/>
+    <item
+        android:id="@+id/aula_virtual_maestro"
+        android:icon="@drawable/ic_clases"
+        android:title="Aula Virtual"
+        android:orderInCategory="3"
+        xmnls:showAsAction="never"/>
+    <item
+        android:id="@+id/exit_maestro"
+        android:icon="@drawable/ic_exit"
+        android:title="Salir"
+        android:orderInCategory="4"
+        xmnls:showAsAction="never"/>
+
+</menu>

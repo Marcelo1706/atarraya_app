@@ -71,14 +71,17 @@ public class Login extends AppCompatActivity {
         rol = (Spinner) findViewById(R.id.spRol);
         int position = (Integer) rol.getSelectedItemPosition();
         if (position==0){
-            Intent intent = new Intent (getApplicationContext(), aulavirtual_activity.class);
+            //0== maestro
+            Intent intent = new Intent (getApplicationContext(), principal_maestro.class);
             startActivityForResult(intent, 0);
         }else
         if (position==1){
+            //1== alumno
             Intent intent = new Intent (getApplicationContext(), menuNavegacion.class);
             startActivityForResult(intent, 0);
         }else
         if (position==2){
+            //2 == admin
             Intent intent = new Intent (getApplicationContext(), calificaciones_activity.class);
             startActivityForResult(intent, 0);
         }

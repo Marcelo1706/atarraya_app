@@ -61,4 +61,7 @@
     <string name="opcionSi">Sí</string>
     <string name="opcionNo">No</string>
     <string name="rol">Seleccione su rol</string>
+    <string name="info_ini">MODIFICAR LUEGO</string>
+    <string name="bienvenido">Bienvenido:</string>
+    <string name="versiculomaestros">\'\'Yo te enseñaré\nY te instruiré en el camino que debes seguir;\nSeré tu consejero y\nEstarán mis ojos sobre ti.\'\'</string>
 </resources>
