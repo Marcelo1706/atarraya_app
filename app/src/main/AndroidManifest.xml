@@ -19,13 +19,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".layout.principal_maestro"></activity>
+        <activity android:name=".layout.principal_maestro" />
         <activity android:name=".ChatActivity" />
         <activity android:name=".layout.ver_eventos_calendario" />
         <activity android:name=".layout.agregarEventos" />
         <activity android:name=".layout.calificaciones_activity" />
         <activity android:name=".layout.calendario_activity" />
         <activity android:name=".layout.aulavirtual_activity" />
+        <activity android:name=".layout.calendario_maestro" />
         <activity
             android:name=".layout.menuNavegacion"
             android:label="@string/title_activity_menu_navegacion"

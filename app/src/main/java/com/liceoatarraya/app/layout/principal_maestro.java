@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -36,6 +37,8 @@ public class principal_maestro extends AppCompatActivity {
             return  true;
             case R.id.calendario_maestro:
                 info.setText("Se eligio la opción calendario maestro");
+                Intent intent = new Intent (getApplicationContext(), calendario_maestro.class);
+                startActivityForResult(intent, 0);
             return  true;
             case R.id.aula_virtual_maestro:
                 info.setText("Se eligio la opción aula virtual maestro");
