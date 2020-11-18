@@ -3,6 +3,7 @@ package com.liceoatarraya.app.fragments;
 import android.app.DatePickerDialog;
 import android.os.Bundle;
 
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
 import android.text.InputType;
@@ -20,6 +21,7 @@ import com.liceoatarraya.app.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -66,7 +68,7 @@ public class Menu extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
-            date_in= date_in.findViewById(R.id.txt_dateInput);
+            date_in= date_in.findViewById(R.id.tv_fechamenu);
             date_button= date_button.findViewById(R.id.btn_consultarmenu);
 
             date_in.setOnClickListener(new View.OnClickListener() {
