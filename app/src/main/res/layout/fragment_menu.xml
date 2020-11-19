@@ -66,7 +66,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:background="@color/atarraya"
+                    android:background="@color/colorPrimary"
                     android:text="Consultar menú"
                     android:textColor="@color/blanco" />
 

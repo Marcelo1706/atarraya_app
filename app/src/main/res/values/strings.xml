@@ -53,7 +53,7 @@
     <string name="btnLogin">Iniciar Sesión</string>
     <string name="contrase_a">Contraseña</string>
     <string name="mantener_sesi_n_iniciada">Mantener Sesión Iniciada</string>
-    <string name="txtView_informacion">Información</string>
+    <string name="txtView_informacion">Seleccione una fecha presionando el botón azul, y luego consulte el menú con el botón verde</string>
     <string name="edtext_datein">Seleccione una fecha</string>
     <string name="btn_consultarmenu">Consultar Menú</string>
     <string name="mensajePregunta">¿Desea salir de la aplicación?</string>

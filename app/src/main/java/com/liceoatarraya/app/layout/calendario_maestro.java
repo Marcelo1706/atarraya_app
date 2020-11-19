@@ -46,6 +46,10 @@ public class calendario_maestro extends AppCompatActivity implements CalendarVie
                 return  true;
             case R.id.aula_virtual_maestro:
                 return  true;
+            case R.id.menu_maestro:
+                Intent intent2 = new Intent (getApplicationContext(), menu_maestro.class);
+                startActivityForResult(intent2, 0);
+                return  true;
             case R.id.exit_maestro:
                 DialogFragment dialogo=new cerrarApp();
                 dialogo.show(getSupportFragmentManager(),"salirapp");

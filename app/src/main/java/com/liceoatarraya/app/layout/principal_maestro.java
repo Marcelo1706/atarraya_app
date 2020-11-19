@@ -43,6 +43,11 @@ public class principal_maestro extends AppCompatActivity {
             case R.id.aula_virtual_maestro:
                 info.setText("Se eligio la opción aula virtual maestro");
             return  true;
+            case R.id.menu_maestro:
+                info.setText("Se eligio la opción menú diario maestro");
+                Intent intent2 = new Intent (getApplicationContext(), menu_maestro.class);
+                startActivityForResult(intent2, 0);
+                return  true;
             case R.id.exit_maestro:
                 DialogFragment dialogo=new cerrarApp();
                 dialogo.show(getSupportFragmentManager(),"salirapp");
