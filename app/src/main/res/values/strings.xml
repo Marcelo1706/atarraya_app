@@ -64,4 +64,8 @@
     <string name="info_ini">MODIFICAR LUEGO</string>
     <string name="bienvenido">Bienvenido:</string>
     <string name="versiculomaestros">\'\'Yo te enseñaré\nY te instruiré en el camino que debes seguir;\nSeré tu consejero y\nEstarán mis ojos sobre ti.\'\'</string>
+    <string name="platillos_disponibles">Platillos disponibles</string>
+    <string name="boton_menu">Consultar menú</string>
+    <string name="boton_DPmenú">ICONO COMIDA</string>
+    <string name="fecha">Fecha que desea consultar</string>
 </resources>
