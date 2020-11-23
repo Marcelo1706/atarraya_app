@@ -1,5 +1,6 @@
 package com.liceoatarraya.app.layout;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -35,6 +36,7 @@ public class calendario_maestro extends AppCompatActivity implements CalendarVie
         return true;
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
@@ -45,6 +47,8 @@ public class calendario_maestro extends AppCompatActivity implements CalendarVie
             case R.id.calendario_maestro:
                 return  true;
             case R.id.aula_virtual_maestro:
+                Intent intent3 = new Intent (getApplicationContext(), aulavirtual_maestro.class);
+                startActivityForResult(intent3, 0);
                 return  true;
             case R.id.menu_maestro:
                 Intent intent2 = new Intent (getApplicationContext(), menu_maestro.class);

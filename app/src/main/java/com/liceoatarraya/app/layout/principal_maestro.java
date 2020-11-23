@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -29,22 +30,21 @@ public class principal_maestro extends AppCompatActivity {
         return true;
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.home_maestro:
-                info.setText("Se eligio la opción inicio");
             return  true;
             case R.id.calendario_maestro:
-                info.setText("Se eligio la opción calendario maestro");
                 Intent intent = new Intent (getApplicationContext(), calendario_maestro.class);
                 startActivityForResult(intent, 0);
             return  true;
             case R.id.aula_virtual_maestro:
-                info.setText("Se eligio la opción aula virtual maestro");
+                Intent intent3 = new Intent (getApplicationContext(), aulavirtual_maestro.class);
+                startActivityForResult(intent3, 0);
             return  true;
             case R.id.menu_maestro:
-                info.setText("Se eligio la opción menú diario maestro");
                 Intent intent2 = new Intent (getApplicationContext(), menu_maestro.class);
                 startActivityForResult(intent2, 0);
                 return  true;

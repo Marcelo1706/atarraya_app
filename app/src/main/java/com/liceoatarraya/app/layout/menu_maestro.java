@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
+import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -62,6 +63,7 @@ public class menu_maestro extends AppCompatActivity{
         getMenuInflater().inflate(R.menu.menumaestro,menu);
         return true;
     }
+    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
@@ -74,6 +76,8 @@ public class menu_maestro extends AppCompatActivity{
                 startActivityForResult(intent_calendar, 0);
                 return  true;
             case R.id.aula_virtual_maestro:
+                Intent intent3 = new Intent (getApplicationContext(), aulavirtual_maestro.class);
+                startActivityForResult(intent3, 0);
                 return  true;
             case R.id.menu_maestro:
                 return  true;
