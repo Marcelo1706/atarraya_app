@@ -25,6 +25,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_asist_grado"
                     android:clickable="true"
                     android:layout_width="160dp"
                     android:layout_height="190dp"
@@ -52,6 +53,7 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_calificMateria"
                     android:clickable="true"
                     android:layout_width="160dp"
                     android:layout_height="190dp"
@@ -65,7 +67,7 @@
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:background="@drawable/cerclebackgroundpink"
-                            android:src="@drawable/ic_reports"
+                            android:src="@drawable/ic_notamateria"
                             android:padding="10dp"/>
                         <TextView
                             android:layout_width="wrap_content"
@@ -86,6 +88,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_califGrado"
                     android:clickable="true"
                     android:layout_width="160dp"
                     android:layout_height="190dp"
@@ -99,7 +102,7 @@
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:background="@drawable/cerclebackgroundpink"
-                            android:src="@drawable/ic_attendance"
+                            android:src="@drawable/ic_notagrado"
                             android:padding="10dp"/>
                         <TextView
                             android:layout_width="wrap_content"
@@ -113,6 +116,7 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_califEstudiante"
                     android:clickable="true"
                     android:layout_width="160dp"
                     android:layout_height="190dp"
@@ -129,7 +133,7 @@
                             android:layout_height="64dp"
                             android:background="@drawable/cerclebackgroundpink"
                             android:padding="10dp"
-                            android:src="@drawable/ic_work" />
+                            android:src="@drawable/ic_notaestudiante" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -151,6 +155,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_reporteconducta"
                     android:clickable="true"
                     android:layout_width="340dp"
                     android:layout_height="150dp"
@@ -165,7 +170,7 @@
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:background="@drawable/cerclebackgroundpink"
-                            android:src="@drawable/ic_equipo"
+                            android:src="@drawable/ic_reporteconductual"
                             android:padding="10dp"/>
                         <TextView
                             android:layout_width="wrap_content"
