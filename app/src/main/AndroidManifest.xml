@@ -19,7 +19,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".layout.reportes_maestro"></activity>
+        <activity android:name=".layout.reservaEquipo"></activity>
+        <activity android:name=".layout.reservarEquipos_maestro" />
+        <activity android:name=".layout.reportes_maestro" />
         <activity android:name=".layout.dashboard_clases" />
         <activity android:name=".layout.aulavirtual_maestro" />
         <activity android:name=".layout.menu_maestro" />

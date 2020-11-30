@@ -75,9 +75,6 @@ public class agregarEventos extends AppCompatActivity {
         etTimeS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Calendar calendar= Calendar.getInstance();
-                //currentHour = calendar.get(Calendar.HOUR_OF_DAY);
-                //currentMinute = calendar.get(Calendar.MINUTE);
                 timePickerDialog = new TimePickerDialog(agregarEventos.this, new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {

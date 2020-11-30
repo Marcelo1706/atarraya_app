@@ -78,5 +78,6 @@
     <string name="descripcion_trabajo_docente">Planificación docente</string>
     <string name="opcion_prestamoEquipo">Préstamo de Equipo</string>
     <string name="descripcion_prestamoEquipo">Reservar equipo</string>
-    <string name="indicacionescalendario">Esta opción está creada para gestionar de una mejor manera los eventos y actividades que se desean programar, para hacerlo únicamente deberá mantener presionado sobre la fecha en la cual desea trabajar, luego de ellos aparecerán tres opciones para poder gestionar el contenido.</string>
+    <string name="indicacionescalendario">Esta opción está creada para gestionar de una mejor manera los eventos y actividades que se desean programar, para hacerlo únicamente deberá presionar sobre la fecha en la cual desea trabajar, luego de ellos aparecerán tres opciones para poder gestionar el contenido.</string>
+    <string name="indicaciones_reserva">A continuación deberá completar los siguientes campos para realizar una reserva de equipo</string>
 </resources>
