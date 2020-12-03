@@ -43,6 +43,8 @@ public class aulavirtual_maestro extends AppCompatActivity implements View.OnCli
                 startActivityForResult(intent_a2, 0);
                 break;
             case R.id.cv_asistencia:
+                intent_a4 = new Intent (this, controlasistencia_maestro.class);
+                startActivityForResult(intent_a4,0);
                 break;
             case R.id.cv_trabajodocente:
                 break;
