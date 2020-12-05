@@ -1,0 +1,12 @@
+<resources>
+    <string-array name="array_materias">
+        <item>--Seleccione--</item>
+        <item>Ciencias</item>
+        <item>Sociales</item>
+        <item>Matemática</item>
+        <item>Lenguaje</item>
+        <item>Ingles</item>
+        <item>Informática</item>
+    </string-array>
+
+</resources>

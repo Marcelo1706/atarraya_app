@@ -47,6 +47,8 @@ public class aulavirtual_maestro extends AppCompatActivity implements View.OnCli
                 startActivityForResult(intent_a4,0);
                 break;
             case R.id.cv_trabajodocente:
+                intent_a5 = new Intent (this, planificaciondocente.class);
+                startActivityForResult(intent_a5,0);
                 break;
             case R.id.cv_prestamoequipo:
                 intent_a3 = new Intent (this, reservarEquipos_maestro.class);

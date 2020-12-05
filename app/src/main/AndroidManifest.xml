@@ -19,7 +19,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".layout.reporteAsistencia"></activity>
+        <activity android:name=".layout.subirplanificaciones_maestro"></activity>
+        <activity android:name=".layout.planificaciondocente" />
+        <activity android:name=".layout.modificaraviso" />
+        <activity android:name=".layout.crearAviso_maestro" />
+        <activity android:name=".layout.avisosMateria_maestro" />
+        <activity android:name=".layout.reporteAsistencia" />
         <activity android:name=".layout.controlasistencia_maestro" />
         <activity android:name=".layout.reservaEquipo" />
         <activity android:name=".layout.reservarEquipos_maestro" />
