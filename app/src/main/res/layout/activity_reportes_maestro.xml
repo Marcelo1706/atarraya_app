@@ -30,25 +30,30 @@
                     android:layout_width="160dp"
                     android:layout_height="190dp"
                     android:layout_margin="10dp">
+
                     <LinearLayout
+                        android:id="@+id/lyAttendanceReport"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:onClick="onReportClick"
+                        android:orientation="vertical">
+
                         <ImageView
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:background="@drawable/cerclebackgroundpink"
-                            android:src="@drawable/ic_asistenciagrado"
-                            android:padding="10dp"/>
+                            android:padding="10dp"
+                            android:src="@drawable/ic_asistenciagrado" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:layout_marginTop="10dp"
-                            android:text="Reportes Asistencia  por Grado"/>
+                            android:text="Reportes Asistencia  por Grado"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -58,25 +63,30 @@
                     android:layout_width="160dp"
                     android:layout_height="190dp"
                     android:layout_margin="10dp">
+
                     <LinearLayout
+                        android:id="@+id/lySScoreReport"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:onClick="onReportClick"
+                        android:orientation="vertical">
+
                         <ImageView
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:background="@drawable/cerclebackgroundpink"
-                            android:src="@drawable/ic_notamateria"
-                            android:padding="10dp"/>
+                            android:padding="10dp"
+                            android:src="@drawable/ic_notamateria" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:layout_marginTop="10dp"
-                            android:text="Reportes calificaciones por materia"/>
+                            android:text="Reportes calificaciones por materia"
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -93,25 +103,30 @@
                     android:layout_width="160dp"
                     android:layout_height="190dp"
                     android:layout_margin="10dp">
+
                     <LinearLayout
+                        android:id="@+id/lyCScoreReport"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:onClick="onReportClick"
+                        android:orientation="vertical">
+
                         <ImageView
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:background="@drawable/cerclebackgroundpink"
-                            android:src="@drawable/ic_notagrado"
-                            android:padding="10dp"/>
+                            android:padding="10dp"
+                            android:src="@drawable/ic_notagrado" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:layout_marginTop="10dp"
-                            android:text="Reportes calificaciones por grado"/>
+                            android:text="Reportes calificaciones por grado"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -123,9 +138,11 @@
                     android:layout_margin="10dp">
 
                     <LinearLayout
+                        android:id="@+id/lySTScoreReport"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
+                        android:onClick="onReportClick"
                         android:orientation="vertical">
 
                         <ImageView
@@ -138,11 +155,11 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:layout_marginTop="10dp"
-                            android:text="Reportes calificaciones por estudiante"/>
+                            android:text="Reportes calificaciones por estudiante"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -160,26 +177,31 @@
                     android:layout_width="340dp"
                     android:layout_height="150dp"
                     android:layout_margin="10dp">
+
                     <LinearLayout
 
+                        android:id="@+id/lyBehaviorReport"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:onClick="onReportClick"
+                        android:orientation="vertical">
+
                         <ImageView
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:background="@drawable/cerclebackgroundpink"
-                            android:src="@drawable/ic_reporteconductual"
-                            android:padding="10dp"/>
+                            android:padding="10dp"
+                            android:src="@drawable/ic_reporteconductual" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:layout_marginTop="10dp"
-                            android:text="Reporte de conducta por alumno"/>
+                            android:text="Reporte de conducta por alumno"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
