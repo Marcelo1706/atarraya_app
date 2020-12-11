@@ -13,9 +13,9 @@ import androidx.annotation.Nullable;
 
 import com.liceoatarraya.app.R;
 import com.liceoatarraya.app.models.NotificationModel;
-import com.liceoatarraya.app.models.NotificationSingleton;
+import com.liceoatarraya.app.util.Util;
 
-import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 public class NotificationAdapter extends ArrayAdapter<NotificationModel> {
@@ -25,7 +25,7 @@ public class NotificationAdapter extends ArrayAdapter<NotificationModel> {
     }
 
     @Override
-    public View getView(int position,View convertView, @NonNull ViewGroup parent) {
+    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         if (convertView == null) {
@@ -37,10 +37,11 @@ public class NotificationAdapter extends ArrayAdapter<NotificationModel> {
         TextView timestamp = convertView.findViewById(R.id.notificationTimestamp);
 
         NotificationModel model = getItem(position);
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
         description.setText(model.getDescription());
-        timestamp.setText(sdf.format(model.getDatetime()));
+        timestamp.setText(Util.findDifference(model.getDatetime(), new Date()));
+
+        if (model.getRead() == 0) convertView.setBackgroundResource(R.color.un_read);
 
 
         return convertView;
