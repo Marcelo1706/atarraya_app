@@ -9,36 +9,42 @@
             android:icon="@drawable/ic_inicio"
             android:title="@string/menu_home" />
     </group>
-  <item android:title="Opciones Institucionales">
-      <menu>
-      <item
-            android:id="@+id/menu"
-            android:icon="@drawable/ic_menu"
-            android:title="@string/menu" />
-        <item
-            android:id="@+id/notificaciones"
-            android:icon="@drawable/ic_notificaciones"
-            android:title="@string/notificaciones" />
-        <item
-            android:id="@+id/mensajes"
-            android:icon="@drawable/ic_mensajes"
-            android:title="@string/mensajes" />
-      </menu>
-  </item>
-    <item android:title="Opciones de la aplicación"><menu>
-        <item
-            android:id="@+id/perfil"
-            android:icon="@drawable/ic_baseline_account_circle_24"
-            android:title="@string/perfil" />
+    <item android:title="Opciones Institucionales">
+        <menu>
+            <item
+                android:id="@+id/menu"
+                android:icon="@drawable/ic_menu"
+                android:title="@string/menu" />
+            <item
+                android:id="@+id/aula_virtual_alumno"
+                android:icon="@drawable/ic_menu"
+                android:title="@string/aula_virtual_alumno" />
+            <item
+                android:id="@+id/notificaciones"
+                android:icon="@drawable/ic_notificaciones"
+                android:title="@string/notificaciones" />
+            <item
+                android:id="@+id/mensajes"
+                android:icon="@drawable/ic_mensajes"
+                android:title="@string/mensajes" />
+        </menu>
+    </item>
+    <item android:title="Opciones de la aplicación">
+        <menu>
+            <item
+                android:id="@+id/perfil"
+                android:icon="@drawable/ic_baseline_account_circle_24"
+                android:title="@string/perfil" />
 
-        <item
-            android:id="@+id/configuracion"
-            android:icon="@drawable/ic_settings"
-            android:title="@string/config" />
-        <item
-            android:id="@+id/salir"
-            android:icon="@drawable/ic_exit"
-            android:title="@string/salir"
-            android:onClick="onclick"/>
-    </menu></item>
+            <item
+                android:id="@+id/configuracion"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/config" />
+            <item
+                android:id="@+id/salir"
+                android:icon="@drawable/ic_exit"
+                android:onClick="onclick"
+                android:title="@string/salir" />
+        </menu>
+    </item>
 </menu>

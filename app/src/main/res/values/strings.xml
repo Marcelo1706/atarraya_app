@@ -78,7 +78,12 @@
     <string name="descripcion_trabajo_docente">Planificación docente</string>
     <string name="opcion_prestamoEquipo">Préstamo de Equipo</string>
     <string name="descripcion_prestamoEquipo">Reservar equipo</string>
+    <string name="aula_virtual_alumno">Aula Virtual</string>
     <string name="indicacionescalendario">Esta opción está creada para gestionar de una mejor manera los eventos y actividades que se desean programar, para hacerlo únicamente deberá presionar sobre la fecha en la cual desea trabajar, luego de ellos aparecerán tres opciones para poder gestionar el contenido.</string>
     <string name="indicaciones_reserva">A continuación deberá completar los siguientes campos para realizar una reserva de equipo</string>
     <string name="indicaciones_crearAviso">Por favor completar todos los campos para realizar un nuevo aviso</string>
+    <string name="aula_virtual">Aula Virtual</string>
+    <string name="line">___________________________________________________</string>
+    <string name="seleccion_materia">Seleccione una materia para continuar</string>
+    <string name="subject_alerts">Avisos Generales de la Materia</string>
 </resources>
