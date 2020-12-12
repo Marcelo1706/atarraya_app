@@ -10,7 +10,6 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -20,10 +19,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".layout.SubjectActivity"></activity>
-        <activity android:name=".layout.AulaVirtualActivity" />
-        <activity android:name=".layout.ReportViewerActivity" />
-        <activity android:name=".layout.subirplanificaciones_maestro" />
+        <activity android:name=".layout.subirplanificaciones_maestro"></activity>
         <activity android:name=".layout.planificaciondocente" />
         <activity android:name=".layout.modificaraviso" />
         <activity android:name=".layout.crearAviso_maestro" />
