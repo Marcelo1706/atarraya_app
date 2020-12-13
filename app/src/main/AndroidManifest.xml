@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.liceoatarraya.app">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.hardware.Camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:background="#2271b3"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".layout.contenidos_maestro"></activity>
+        <activity android:name=".layout.agregar_modif_contenido" />
+        <activity android:name=".layout.SubjectActivity" />
+        <activity android:name=".layout.AulaVirtualActivity" />
+        <activity android:name=".layout.ReportViewerActivity" />
+        <activity android:name=".layout.subirplanificaciones_maestro" />
+        <activity android:name=".layout.planificaciondocente" />
+        <activity android:name=".layout.modificaraviso" />
+        <activity android:name=".layout.crearAviso_maestro" />
+        <activity android:name=".layout.avisosMateria_maestro" />
+        <activity android:name=".layout.reporteAsistencia" />
+        <activity android:name=".layout.controlasistencia_maestro" />
+        <activity android:name=".layout.reservaEquipo" />
+        <activity android:name=".layout.reservarEquipos_maestro" />
+        <activity android:name=".layout.reportes_maestro" />
+        <activity android:name=".layout.dashboard_clases" />
+        <activity android:name=".layout.aulavirtual_maestro" />
+        <activity android:name=".layout.menu_maestro" />
+        <activity android:name=".layout.principal_maestro" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".layout.ver_eventos_calendario" />
+        <activity android:name=".layout.agregarEventos" />
+        <activity android:name=".layout.calificaciones_activity" />
+        <activity android:name=".layout.calendario_activity" />
+        <activity android:name=".layout.aulavirtual_activity" />
+        <activity android:name=".layout.calendario_maestro" />
+        <activity
+            android:name=".layout.menuNavegacion"
+            android:label="@string/title_activity_menu_navegacion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".layout.Login" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".principalMenu" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>
