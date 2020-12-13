@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="roles_array">
-        <item>Estudiante</item>
-        <item>Docente</item>
-        <item>Administrador</item>
-    </string-array>
-</resources>
