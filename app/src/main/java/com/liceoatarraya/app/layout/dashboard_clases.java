@@ -37,7 +37,7 @@ public class dashboard_clases extends AppCompatActivity implements View.OnClickL
         Intent intenta1,intenta2,intenta3,intenta4,intenta5;
         switch (v.getId()){
             case R.id.cv_admincontenidoclase:
-                intenta1 = new Intent (this, dashboard_clases.class);
+                intenta1 = new Intent (this, contenidos_maestro.class);
                 startActivityForResult(intenta1, 0);
                 break;
             case R.id.cv_vercontenido:

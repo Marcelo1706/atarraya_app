@@ -86,4 +86,5 @@
     <string name="line">___________________________________________________</string>
     <string name="seleccion_materia">Seleccione una materia para continuar</string>
     <string name="subject_alerts">Avisos Generales de la Materia</string>
+    <string name="indicaciones_contenido">Indicaciones contenido</string>
 </resources>
