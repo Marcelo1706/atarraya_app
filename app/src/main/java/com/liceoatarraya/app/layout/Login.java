@@ -82,7 +82,7 @@ public class Login extends AppCompatActivity {
         }else
         if (position==2){
             //2 == admin
-            Intent intent = new Intent (getApplicationContext(), calificaciones_activity.class);
+            Intent intent = new Intent (getApplicationContext(), dasboard_modAdmin.class);
             startActivityForResult(intent, 0);
         }
     }

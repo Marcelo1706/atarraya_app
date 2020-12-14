@@ -20,7 +20,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".layout.contenidos_maestro"></activity>
+        <activity android:name=".layout.dashad_registroacademico"></activity>
+        <activity android:name=".layout.dashad_administracion" />
+        <activity android:name=".layout.calendario_modadmin" />
+        <activity android:name=".layout.menu_modadmin" />
+        <activity android:name=".layout.dasboard_modAdmin" />
+        <activity android:name=".layout.contenidos_maestro" />
         <activity android:name=".layout.agregar_modif_contenido" />
         <activity android:name=".layout.SubjectActivity" />
         <activity android:name=".layout.AulaVirtualActivity" />
