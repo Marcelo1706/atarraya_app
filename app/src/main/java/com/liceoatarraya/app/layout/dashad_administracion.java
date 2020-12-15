@@ -38,20 +38,20 @@ public class dashad_administracion extends AppCompatActivity implements View.OnC
         Intent intent_adming,intent_usu,intent_reg, intent_rep, intent_prest;
         switch (v.getId()){
             case R.id.cv_admingeneral:
-                /*intent_adming = new Intent (this, dashad_administracion.class);
-                startActivityForResult(intent_adming, 0);*/
+                intent_adming = new Intent (this, dashad_general.class);
+                startActivityForResult(intent_adming, 0);
                 break;
             case R.id.cv_usuariosyroles:
-                /*intent_usu = new Intent (this, calendario_modadmin.class);
-                startActivityForResult(intent_usu, 0);*/
+                intent_usu = new Intent (this, dashad_usuariosroles.class);
+                startActivityForResult(intent_usu, 0);
                 break;
             case R.id.cv_registroacademico:
                 intent_reg = new Intent (this, dashad_registroacademico.class);
                 startActivityForResult(intent_reg,0);
                 break;
             case R.id.cv_reportesadmin:
-                /*intent_rep = new Intent (this, calendario_modadmin.class);
-                startActivityForResult(intent_rep, 0);*/
+                intent_rep = new Intent (this, dashad_reportes.class);
+                startActivityForResult(intent_rep, 0);
             break;
             case R.id.cv_prestamoequipo_admin:
                 /*intent_prest = new Intent (this, calendario_modadmin.class);
