@@ -34,20 +34,20 @@ public class dashad_general extends AppCompatActivity implements View.OnClickLis
         Intent intent_datos,intent_devo,intent_avisos, intent_versi;
         switch (v.getId()){
             case R.id.cv_datosinstitucion:
-                /*intent_datos= new Intent (this, dashad_administracion.class);
-                startActivityForResult(intent_datos, 0);*/
+                intent_datos= new Intent (this, datosinstitucion_admin.class);
+                startActivityForResult(intent_datos, 0);
                 break;
             case R.id.cv_devocionales:
-                /*intent_devo = new Intent (this, calendario_modadmin.class);
-                startActivityForResult(intent_devo, 0);*/
+                intent_devo = new Intent (this, devocionales_admin.class);
+                startActivityForResult(intent_devo, 0);
                 break;
             case R.id.cv_avisosadmin:
-                /*intent_avisos = new Intent (this, menu_modadmin.class);
+                intent_avisos = new Intent (this, avisos_admin.class);
                 startActivityForResult(intent_avisos,0);
-                break;*/
+                break;
             case R.id.cv_versiculos:
-                /*intent_versi= new Intent (this, calendario_modadmin.class);
-                startActivityForResult(intent_versi, 0);*/
+                intent_versi= new Intent (this, versiculo_admin.class);
+                startActivityForResult(intent_versi, 0);
                 break;
             default:break;
         }

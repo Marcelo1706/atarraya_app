@@ -1,0 +1,12 @@
+<resources>
+    <string-array name="array_semanas">
+        <item>--Seleccione--</item>
+        <item>Semana 1</item>
+        <item>Semana 2</item>
+        <item>Semana 3</item>
+        <item>Semana 4</item>
+        <item>Semana 5</item>
+        <item>Semana 6</item>
+    </string-array>
+
+</resources>

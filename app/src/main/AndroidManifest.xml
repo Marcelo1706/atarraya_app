@@ -20,7 +20,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".layout.dashad_reportes"></activity>
+        <activity android:name=".layout.crearversiculo_admin"></activity>
+        <activity android:name=".layout.versiculo_admin" />
+        <activity android:name=".layout.avisos_admin" />
+        <activity android:name=".layout.devocionales_admin" />
+        <activity android:name=".layout.datosinstitucion_admin" />
+        <activity android:name=".layout.dashad_prestamoequipo" />
+        <activity android:name=".layout.dashad_reportes" />
         <activity android:name=".layout.dashad_usuariosroles" />
         <activity android:name=".layout.dashad_general" />
         <activity android:name=".layout.dashad_registroacademico" />

@@ -54,8 +54,8 @@ public class dashad_administracion extends AppCompatActivity implements View.OnC
                 startActivityForResult(intent_rep, 0);
             break;
             case R.id.cv_prestamoequipo_admin:
-                /*intent_prest = new Intent (this, calendario_modadmin.class);
-                startActivityForResult(intent_prest, 0);*/
+                intent_prest = new Intent (this, dashad_prestamoequipo.class);
+                startActivityForResult(intent_prest, 0);
                 break;
             default:break;
         }

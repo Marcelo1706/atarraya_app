@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".layout.dashad_general"
+    tools:context=".layout.dashad_prestamoequipo"
     android:orientation="vertical"
     android:padding="10dp"
     android:gravity="center">
@@ -22,119 +22,14 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <androidx.cardview.widget.CardView
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:id="@+id/cv_datosinstitucion"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center">
-                        <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:background="@drawable/cerclebackgroundmodadmin"
-                            android:src="@drawable/ic_school"
-                            android:padding="10dp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textStyle="bold"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:layout_marginTop="10dp"
-                            android:text="Datos Institucionales"/>
 
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-            </LinearLayout>
-            <LinearLayout
-                android:clipToPadding="false"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cv_devocionales"
-                    android:foreground="?android:attr/selectableItemBackground"
+                    android:id="@+id/cv_registrarequipo"
+                    android:layout_width="211dp"
+                    android:layout_height="194dp"
+                    android:layout_margin="10dp"
                     android:clickable="true"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center">
-                        <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:background="@drawable/cerclebackgroundmodadmin"
-                            android:src="@drawable/ic_devocionales"
-                            android:padding="10dp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textStyle="bold"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:layout_marginTop="10dp"
-                            android:text="Devocionales"/>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-            </LinearLayout>
-            <LinearLayout
-                android:clipToPadding="false"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cv_avisosadmin"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center">
-                        <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:background="@drawable/cerclebackgroundmodadmin"
-                            android:src="@drawable/ic_avisos_materia"
-                            android:padding="10dp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textStyle="bold"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:layout_marginTop="10dp"
-                            android:text="Avisos"/>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-            </LinearLayout>
-            <LinearLayout
-                android:clipToPadding="false"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cv_versiculos"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp">
+                    android:foreground="?android:attr/selectableItemBackground">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -143,12 +38,49 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
                             android:background="@drawable/cerclebackgroundmodadmin"
                             android:padding="10dp"
-                            android:src="@drawable/biblia" />
+                            android:src="@drawable/ic_registro" />
 
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Registrar Equipo"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_reservarequipo"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="211dp"
+                    android:layout_height="194dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/cerclebackgroundmodadmin"
+                            android:src="@drawable/ic_equipo"
+                            android:padding="10dp"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -156,10 +88,46 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:layout_marginTop="10dp"
-                            android:text="Versículos"/>
+                            android:text="Reservar equipo"
+                            android:textSize="18sp"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-
+            </LinearLayout>
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_adminreservas"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="211dp"
+                    android:layout_height="194dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/cerclebackgroundmodadmin"
+                            android:src="@drawable/ic_work"
+                            android:padding="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Administrar Reservas"
+                            android:textSize="18sp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
