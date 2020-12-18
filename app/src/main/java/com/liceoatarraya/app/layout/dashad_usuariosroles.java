@@ -29,12 +29,12 @@ public class dashad_usuariosroles extends AppCompatActivity implements View.OnCl
         Intent intent_plant,intent_rol;
         switch (v.getId()){
             case R.id.cv_plantadocente:
-                /*intent_plant = new Intent (this, dashad_administracion.class);
-                startActivityForResult(intent_plant, 0);*/
+                intent_plant = new Intent (this, plantadocente_admin.class);
+                startActivityForResult(intent_plant, 0);
                 break;
             case R.id.cv_rolesdocente:
-                /*intent_rol= new Intent (this, calendario_modadmin.class);
-                startActivityForResult(intent_rol, 0);*/
+                intent_rol= new Intent (this, rolesdocente_admin.class);
+                startActivityForResult(intent_rol, 0);
                 break;
             default:break;
         }
