@@ -37,31 +37,31 @@ public class dashad_registroacademico extends AppCompatActivity implements View.
 
     @Override
     public void onClick(View v) {
-        Intent intent_adminalum,intent_admingrad,intent_adminasig, intent_prom, intent_ponder,intent_perio;
+        Intent intent;
         switch (v.getId()){
             case R.id.cv_adminalumnos:
-                /*intent_adminalum = new Intent (this, dashad_administracion.class);
-                startActivityForResult(intent_adminalum, 0);*/
+                /*intent = new Intent (this, dashad_administracion.class);
+                startActivityForResult(intent, 0);*/
                 break;
             case R.id.cv_admingradossecc:
-                /*intent_admingrad = new Intent (this, calendario_modadmin.class);
-                startActivityForResult(intent_admingrad, 0);*/
+                intent = new Intent (this, GradosSeccionesActivity.class);
+                startActivityForResult(intent, 0);
                 break;
             case R.id.cv_adminasignaturas:
-                /*intent_adminasig = new Intent (this, menu_modadmin.class);
-                startActivityForResult(intent_adminasig,0);
-                break;*/
+                intent = new Intent (this, SubjectManagementActivity.class);
+                startActivity(intent);
+                break;
             case R.id.cv_promgrados:
-                /*intent_prom= new Intent (this, calendario_modadmin.class);
-                startActivityForResult(intent_prom, 0);*/
+                /*intent= new Intent (this, calendario_modadmin.class);
+                startActivityForResult(intent, 0);*/
                 break;
             case R.id.cv_ponderaasignatura:
-                /*intent_ponder = new Intent (this, calendario_modadmin.class);
-                startActivityForResult(intent_ponder, 0);*/
+                /*intent = new Intent (this, calendario_modadmin.class);
+                startActivityForResult(intent, 0);*/
                 break;
             case R.id.cv_periodosasig:
-                /*intent_perio = new Intent (this, calendario_modadmin.class);
-                startActivityForResult(intent_perio, 0);*/
+                /*intent = new Intent (this, calendario_modadmin.class);
+                startActivityForResult(intent, 0);*/
                 break;
             default:break;
         }

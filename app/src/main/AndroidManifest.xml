@@ -20,7 +20,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".layout.crearversiculo_admin"></activity>
+        <activity android:name=".layout.OrientadoresActivity"></activity>
+        <activity android:name=".layout.EditarGradoActivity" />
+        <activity android:name=".layout.crearversiculo_admin" />
         <activity android:name=".layout.versiculo_admin" />
         <activity android:name=".layout.avisos_admin" />
         <activity android:name=".layout.devocionales_admin" />
@@ -39,7 +41,9 @@
         <activity android:name=".layout.SubjectActivity" />
         <activity android:name=".layout.AulaVirtualActivity" />
         <activity android:name=".layout.ReportViewerActivity" />
+        <activity android:name=".layout.SubjectManagementActivity" />
         <activity android:name=".layout.subirplanificaciones_maestro" />
+        <activity android:name=".layout.GradosSeccionesActivity" />
         <activity android:name=".layout.planificaciondocente" />
         <activity android:name=".layout.modificaraviso" />
         <activity android:name=".layout.crearAviso_maestro" />

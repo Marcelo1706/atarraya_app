@@ -87,4 +87,8 @@
     <string name="seleccion_materia">Seleccione una materia para continuar</string>
     <string name="subject_alerts">Avisos Generales de la Materia</string>
     <string name="indicaciones_contenido">Indicaciones contenido</string>
+    <string name="asignaturas">Asignaturas</string>
+    <string name="grados_y_secciones">Grados y Secciones</string>
+    <string name="editar">Editar</string>
+    <string name="desactivar">Desactivar</string>
 </resources>
