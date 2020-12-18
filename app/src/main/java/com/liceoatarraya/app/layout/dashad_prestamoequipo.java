@@ -32,17 +32,17 @@ public class dashad_prestamoequipo extends AppCompatActivity implements View.OnC
         Intent intent_registro, intent_reservar, intent_adminreservas;
         switch (v.getId()){
             case R.id.cv_registrarequipo:
-                /*intent_registro = new Intent (this, dashad_administracion.class);
-                startActivityForResult(intent_registro, 0);*/
+                intent_registro = new Intent (this, registrarequipo.class);
+                startActivityForResult(intent_registro, 0);
                 break;
             case R.id.cv_reservarequipo:
-                /*intent_reservar = new Intent (this, calendario_modadmin.class);
-                startActivityForResult(intent_reservar, 0);*/
+                intent_reservar = new Intent (this, reservarEquipos_maestro.class);
+                startActivityForResult(intent_reservar, 0);
                 break;
             case R.id.cv_adminreservas:
-                /*intent_adminreservas = new Intent (this, menu_modadmin.class);
+                intent_adminreservas = new Intent (this, adminreservasequipo_admin.class);
                 startActivityForResult(intent_adminreservas,0);
-                break;*/
+                break;
             default:break;
         }
     }

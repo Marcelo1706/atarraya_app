@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".layout.crearversiculo_admin">
+    tools:context=".layout.registrarequipo">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,13 +25,13 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/tv_crearaviso"
+                    android:id="@+id/tv_registrarequipo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="NUEVO VERSÍCULO"
+                    android:text="REGISTRAR EQUIPO"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -48,73 +48,136 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/tv_indicacionesAviso"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Versículo:"
+                    android:layout_marginLeft="10dp"
+                    android:text="Por favor completar todos los campos para realizar un nuevo registro"
                     android:textColor="@color/oscuro"
                     android:textSize="18sp" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="215dp"
-                    android:ems="40"
-                    android:gravity="start|top"
-                    android:inputType="textMultiLine"
-                    android:padding="5dp"
-                    android:background="@drawable/border"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre\n\del equipo:"
+                    android:textColor="@color/oscuro"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_nombreequipo"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Escriba aquí"
+                    android:maxLength="50" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Pasaje:"
+                    android:text="Marca:"
                     android:textColor="@color/oscuro"
                     android:textSize="18sp" />
+
                 <EditText
-                    android:id="@+id/edt_pasajeversiculo"
-                    android:layout_width="match_parent"
+                    android:id="@+id/edt_marcaequipo"
+                    android:layout_width="225dp"
                     android:layout_height="wrap_content"
-                    android:hint="Genesis 1:1"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Escriba aquí"
                     android:maxLength="50"
-                    android:layout_marginTop="25dp"/>
+                    android:layout_marginStart="50dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:text="Semana "
+                    android:text="Modelo:"
                     android:textColor="@color/oscuro"
                     android:textSize="18sp" />
-                <Spinner
-                    android:id="@+id/sp_semanaversiculo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="25dp" />
 
+                <EditText
+                    android:id="@+id/edt_modeloequipo"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Escriba aquí"
+                    android:maxLength="35"
+                    android:layout_marginStart="50dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Num Serie:"
+                    android:textColor="@color/oscuro"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_numserieequipo"
+                    android:layout_width="244dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:hint="Escriba aquí" />
+
+            </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estado "
+                    android:textColor="@color/oscuro"
+                    android:textSize="18sp" />
+               <Spinner
+                   android:id="@+id/sp_estadoequipo"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+               </Spinner>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:layout_marginTop="80dp">
+                android:layout_marginTop="30dp">
                 <Button
-                    android:id="@+id/btn_guardarversiculo"
+                    android:id="@+id/btn_guardaraviso"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="GUARDAR VERSÍCULO"
+                    android:text="GUARDAR AVISO"
                     android:background="@drawable/rounded_edittext_focused"
                     android:backgroundTint="@color/atarraya"
                     android:padding="5dp"
@@ -127,7 +190,7 @@
                     android:layout_marginLeft="5dp"
                     android:padding="5dp"
                     android:background="@drawable/rounded_edittext_focused"
-                    android:backgroundTint="#7C7B7B"
+                    android:backgroundTint="@color/pink"
                     android:textColor="@color/blanco"/>
             </LinearLayout>
         </LinearLayout>
