@@ -37,7 +37,7 @@ public class menuNavegacion extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.mensajes, R.id.notificaciones, R.id.perfil, R.id.menu, R.id.salir, R.id.aula_virtual_alumno)
+                R.id.nav_home, R.id.mensajes, R.id.notificaciones, R.id.perfil, R.id.menu, R.id.salir)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -52,6 +52,11 @@ public class menuNavegacion extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 //IF PARA CONTROLAR HACIA QUE ACTIVITY ME DEBE ENVIAR AL UTILIZAR EL MENU INFERIOR
+                if (item.getItemId() == R.id.menu_home) {
+                    startActivity(new Intent(getApplicationContext(), menuNavegacion.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                }
                 if (item.getItemId() == R.id.menu_aulavirtual) {
                     startActivity(new Intent(getApplicationContext(), AulaVirtualActivity.class));
                     overridePendingTransition(0, 0);
@@ -63,11 +68,6 @@ public class menuNavegacion extends AppCompatActivity {
                     return true;
                 }
                 if (item.getItemId() == R.id.menu_calificaciones) {
-                    startActivity(new Intent(getApplicationContext(), calificaciones_activity.class));
-                    overridePendingTransition(0, 0);
-                    return true;
-                }
-                if (item.getItemId() == R.id.aula_virtual_alumno) {
                     startActivity(new Intent(getApplicationContext(), calificaciones_activity.class));
                     overridePendingTransition(0, 0);
                     return true;

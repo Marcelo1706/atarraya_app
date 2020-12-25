@@ -26,6 +26,6 @@
         android:background="@color/oscuro"
         app:itemTextColor="@color/blanco"
         app:itemIconTint="@color/blanco"
-        app:menu="@menu/menu_calificaciones"/>
+        app:menu="@menu/main_menu"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

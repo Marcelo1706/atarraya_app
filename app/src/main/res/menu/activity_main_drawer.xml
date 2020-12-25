@@ -16,10 +16,6 @@
                 android:icon="@drawable/ic_menu"
                 android:title="@string/menu" />
             <item
-                android:id="@+id/aula_virtual_alumno"
-                android:icon="@drawable/ic_menu"
-                android:title="@string/aula_virtual_alumno" />
-            <item
                 android:id="@+id/notificaciones"
                 android:icon="@drawable/ic_notificaciones"
                 android:title="@string/notificaciones" />
@@ -36,10 +32,10 @@
                 android:icon="@drawable/ic_baseline_account_circle_24"
                 android:title="@string/perfil" />
 
-            <item
+           <!-- <item
                 android:id="@+id/configuracion"
                 android:icon="@drawable/ic_settings"
-                android:title="@string/config" />
+                android:title="@string/config" />-->
             <item
                 android:id="@+id/salir"
                 android:icon="@drawable/ic_exit"
