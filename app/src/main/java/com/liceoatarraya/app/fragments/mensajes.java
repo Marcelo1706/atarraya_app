@@ -2,21 +2,18 @@ package com.liceoatarraya.app.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
+import android.widget.ListAdapter;
 import android.widget.ListView;
+
+import androidx.fragment.app.Fragment;
 
 import com.liceoatarraya.app.ChatActivity;
 import com.liceoatarraya.app.R;
 import com.liceoatarraya.app.adapters.MessageAdapter;
-import com.liceoatarraya.app.adapters.NotificationAdapter;
 import com.liceoatarraya.app.models.MessageSingleton;
-import com.liceoatarraya.app.models.NotificationSingleton;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -76,13 +73,35 @@ public class mensajes extends Fragment {
         MessageSingleton data = MessageSingleton.getInstance();
         messageAdapter = new MessageAdapter(getActivity(), data.getMessages());
         messageList.setAdapter(messageAdapter);
-        messageList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(getContext(), ChatActivity.class);
-                startActivity(intent);
-            }
+        getTotalHeightofListView(messageList);
+        messageList.setOnItemClickListener((parent, view1, position, id) -> {
+            Intent intent = new Intent(getContext(), ChatActivity.class);
+            startActivity(intent);
         });
         return view;
+    }
+
+    public static void getTotalHeightofListView(ListView listView) {
+
+        ListAdapter mAdapter = listView.getAdapter();
+
+        int totalHeight = 0;
+
+        for (int i = 0; i < mAdapter.getCount(); i++) {
+            View mView = mAdapter.getView(i, null, listView);
+
+            mView.measure(
+                    View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED),
+
+                    View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED));
+
+            totalHeight += mView.getMeasuredHeight();
+        }
+
+        ViewGroup.LayoutParams params = listView.getLayoutParams();
+        params.height = totalHeight
+                + (listView.getDividerHeight() * (mAdapter.getCount() - 1));
+        listView.setLayoutParams(params);
+        listView.requestLayout();
     }
 }
