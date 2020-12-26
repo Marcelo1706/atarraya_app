@@ -1,14 +1,13 @@
 package com.liceoatarraya.app.layout;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.widget.CalendarView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.liceoatarraya.app.R;
@@ -22,31 +21,29 @@ public class calendario_activity extends AppCompatActivity implements CalendarVi
         setContentView(R.layout.calendario_activity);
         setTitle("Calendario");
         //== Instanciando el calendario para la opción de agenda
-        calendarView=(CalendarView)findViewById(R.id.calendar);
-        calendarView.setOnDateChangeListener((CalendarView.OnDateChangeListener) this);
-        calbottomNavigationView=(BottomNavigationView)findViewById(R.id.bnv_calendario);
-        calbottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                //IF PARA CONTROLAR HACIA QUE ACTIVITY ME DEBE ENVIAR AL UTILIZAR EL MENU INFERIOR
-                if (item.getItemId()==R.id.menu_aulavirtual){
-                    startActivity(new Intent(getApplicationContext(), aulavirtual_activity.class));
-                    overridePendingTransition(0,0);
-                    return  true;
+        calendarView= findViewById(R.id.calendar);
+        calendarView.setOnDateChangeListener(this);
+        calbottomNavigationView= findViewById(R.id.bnv_calendario);
+        calbottomNavigationView.setSelectedItemId(R.id.menu_calendario);
+        calbottomNavigationView.setOnNavigationItemSelectedListener(item -> {
+            //IF PARA CONTROLAR HACIA QUE ACTIVITY ME DEBE ENVIAR AL UTILIZAR EL MENU INFERIOR
+            if (item.getItemId()==R.id.menu_aulavirtual){
+                startActivity(new Intent(getApplicationContext(), aulavirtual_activity.class));
+                overridePendingTransition(0,0);
+                return  true;
 
-                }
-                if (item.getItemId()==R.id.menu_home){
-                    startActivity(new Intent(getApplicationContext(), menuNavegacion.class));
-                    overridePendingTransition(0,0);
-                    return  true;
-                }
-                if (item.getItemId()==R.id.menu_calificaciones){
-                    startActivity(new Intent(getApplicationContext(), calificaciones_activity.class));
-                    overridePendingTransition(0,0);
-                    return  true;
-                }
-                return true;
             }
+            if (item.getItemId()==R.id.menu_home){
+                startActivity(new Intent(getApplicationContext(), menuNavegacion.class));
+                overridePendingTransition(0,0);
+                return  true;
+            }
+            if (item.getItemId()==R.id.menu_calificaciones){
+                startActivity(new Intent(getApplicationContext(), calificaciones_activity.class));
+                overridePendingTransition(0,0);
+                return  true;
+            }
+            return true;
         });
     }
 

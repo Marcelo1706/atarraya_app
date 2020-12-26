@@ -3,23 +3,22 @@ package com.liceoatarraya.app.layout;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.Menu;
+import android.view.MenuItem;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationView;
-import com.liceoatarraya.app.R;
-import com.liceoatarraya.app.cerrarApp;
-
-import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.DialogFragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
+import com.liceoatarraya.app.R;
+import com.liceoatarraya.app.cerrarApp;
 
 public class menuNavegacion extends AppCompatActivity {
     BottomNavigationView mbottomNavigationView;
@@ -47,33 +46,32 @@ public class menuNavegacion extends AppCompatActivity {
         /*
         CÓDIGOS PARA MENU INFERIOR
          */
-        mbottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigationView);
-        mbottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                //IF PARA CONTROLAR HACIA QUE ACTIVITY ME DEBE ENVIAR AL UTILIZAR EL MENU INFERIOR
-                if (item.getItemId() == R.id.menu_home) {
-                    startActivity(new Intent(getApplicationContext(), menuNavegacion.class));
-                    overridePendingTransition(0, 0);
-                    return true;
-                }
-                if (item.getItemId() == R.id.menu_aulavirtual) {
-                    startActivity(new Intent(getApplicationContext(), AulaVirtualActivity.class));
-                    overridePendingTransition(0, 0);
-                    return true;
-                }
-                if (item.getItemId() == R.id.menu_calendario) {
-                    startActivity(new Intent(getApplicationContext(), calendario_activity.class));
-                    overridePendingTransition(0, 0);
-                    return true;
-                }
-                if (item.getItemId() == R.id.menu_calificaciones) {
-                    startActivity(new Intent(getApplicationContext(), calificaciones_activity.class));
-                    overridePendingTransition(0, 0);
-                    return true;
-                }
+        mbottomNavigationView = findViewById(R.id.bottomNavigationView);
+        mbottomNavigationView.setSelectedItemId(R.id.menu_home);
+
+        mbottomNavigationView.setOnNavigationItemSelectedListener(item -> {
+            //IF PARA CONTROLAR HACIA QUE ACTIVITY ME DEBE ENVIAR AL UTILIZAR EL MENU INFERIOR
+            if (item.getItemId() == R.id.menu_home) {
+                startActivity(new Intent(getApplicationContext(), menuNavegacion.class));
+                overridePendingTransition(0, 0);
                 return true;
             }
+            if (item.getItemId() == R.id.menu_aulavirtual) {
+                startActivity(new Intent(getApplicationContext(), AulaVirtualActivity.class));
+                overridePendingTransition(0, 0);
+                return true;
+            }
+            if (item.getItemId() == R.id.menu_calendario) {
+                startActivity(new Intent(getApplicationContext(), calendario_activity.class));
+                overridePendingTransition(0, 0);
+                return true;
+            }
+            if (item.getItemId() == R.id.menu_calificaciones) {
+                startActivity(new Intent(getApplicationContext(), calificaciones_activity.class));
+                overridePendingTransition(0, 0);
+                return true;
+            }
+            return true;
         });
     }
 
