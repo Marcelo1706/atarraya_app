@@ -36,21 +36,29 @@
                 android:textColor="@color/oscuro"
                 android:textSize="18sp" />
 
-            <ImageView
-                android:id="@+id/iv_fotoperfil"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                tools:src="@drawable/ic_menu_camera" />
-            <Button
-            android:id="@+id/btn_seleccionarfoto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Seleccionar foto"/>
-            <Button
-                android:id="@+id/btn_tomarfoto"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tomar FOTO"/>
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imv_fotoperfil"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_menu_camera"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/btn_subirfoto"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext_focused"
+                    android:layout_gravity="center"
+                    android:text="Subir Nueva Foto"
+                    android:layout_margin="10dp"
+                    android:onClick="onClick"/>
+
+            </LinearLayout>
         </LinearLayout>
             <LinearLayout
                 android:id="@+id/linlay_opciones"

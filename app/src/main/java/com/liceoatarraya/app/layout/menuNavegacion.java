@@ -2,10 +2,16 @@ package com.liceoatarraya.app.layout;
 
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -23,6 +29,7 @@ import com.liceoatarraya.app.cerrarApp;
 public class menuNavegacion extends AppCompatActivity {
     BottomNavigationView mbottomNavigationView;
     private AppBarConfiguration mAppBarConfiguration;
+    ImageView fotoperfil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +42,7 @@ public class menuNavegacion extends AppCompatActivity {
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
+        fotoperfil=findViewById(R.id.imv_fotoperfil);
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.mensajes, R.id.notificaciones, R.id.perfil, R.id.menu, R.id.salir)
                 .setDrawerLayout(drawer)
@@ -97,5 +105,27 @@ public class menuNavegacion extends AppCompatActivity {
     private void mostrarDialogoSalir() {
         DialogFragment dialogo=new cerrarApp();
         dialogo.show(getSupportFragmentManager(),"salirapp");
+    }
+
+    public void onClick(View view) {
+        subirfotoperfil();
+    }
+
+    private void subirfotoperfil() {
+        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        intent.setType("image/");
+        startActivityForResult(intent.createChooser(intent,"Seleccione la aplicación"),10);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK) {
+            Uri path = data.getData();
+            fotoperfil.setImageURI(path);
+
+        } else {
+            Toast.makeText(this, "IMAGEN NO SELECCIONADA", Toast.LENGTH_SHORT).show();
+        }
     }
 }
