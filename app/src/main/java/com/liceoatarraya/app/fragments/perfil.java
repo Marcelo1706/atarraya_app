@@ -31,22 +31,7 @@ import java.io.File;
 
 import static android.app.Activity.RESULT_OK;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link perfil#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class perfil extends Fragment {
-    ImageView ivFotoperfil;
-    Button Btnseleccionarfoto;
-    Button Btntomarfoto;
-    Uri imagenUri;
-    int TOMAR_FOTO=100;
-    int SELECT_IMAGEN=200;
-    String CARPETA_RAIZ="MisFotosAtaraya";
-    String CARPETA_IMAGENES="imagenes";
-    String RUTA_IMAGEN= CARPETA_RAIZ + CARPETA_IMAGENES;
-    String path;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -86,56 +71,7 @@ public class perfil extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-        /*COD PARA CAMBIAR FOTO PERFIL
-        ivFotoperfil= ivFotoperfil.findViewById(R.id.iv_fotoperfil);
-        Btnseleccionarfoto=Btnseleccionarfoto.findViewById(R.id.btn_seleccionarfoto);
-        Btntomarfoto=Btntomarfoto.findViewById(R.id.btn_tomarfoto);
-        if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.CAMERA)!= PackageManager.PERMISSION_GRANTED){
-            ActivityCompat.requestPermissions(getActivity(),
-                    new String[]{Manifest.permission.CAMERA,
-                            Manifest.permission.WRITE_EXTERNAL_STORAGE},0);
-        }
-        Btntomarfoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                tomarfoto();
-            }
-        });
-        Btnseleccionarfoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                seleccionarImagen();
-            }
-        });
-    }
 
-    private void seleccionarImagen() {
-        Intent galeria = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
-        startActivityForResult(galeria,SELECT_IMAGEN);
-    }
-
-    private void tomarfoto() {
-        String nombreImagen="";
-        File fileImagen = new File(Environment.getExternalStorageDirectory(),RUTA_IMAGEN);
-        boolean isCreada = fileImagen.exists();
-        if (isCreada==false){
-            isCreada=fileImagen.mkdirs();
-        }
-        if (isCreada==true){
-            nombreImagen=(System.currentTimeMillis()/1000)+".jpg";
-        }
-        path=Environment.getExternalStorageDirectory()+File.separator+RUTA_IMAGEN+File.separator+nombreImagen;
-        File imagen = new File (path);
-        Intent intent = null;
-        intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.N){
-            String authorities=getActivity().getPackageName()+".provider";
-            Uri imagenUri = FileProvider.getUriForFile(getActivity(),authorities,imagen);
-            intent.putExtra(MediaStore.EXTRA_OUTPUT,imagenUri);
-        }else{
-            intent.putExtra(MediaStore.EXTRA_OUTPUT,Uri.fromFile(imagen));
-        }
-        startActivityForResult (intent, TOMAR_FOTO);*/
     }
 
     @Override
@@ -145,21 +81,5 @@ public class perfil extends Fragment {
         return inflater.inflate(R.layout.fragment_perfil, container, false);
     }
 
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if(resultCode==RESULT_OK && requestCode==SELECT_IMAGEN){
-            imagenUri=data.getData();
-            ivFotoperfil.setImageURI(imagenUri);
-        }else if (resultCode == RESULT_OK && requestCode ==TOMAR_FOTO){
-            MediaScannerConnection.scanFile(getActivity(), new String[]{path}, null, new MediaScannerConnection.OnScanCompletedListener() {
-                @Override
-                public void onScanCompleted(String path, Uri uri) {
-
-                }
-            });
-            Bitmap bitmap = BitmapFactory.decodeFile(path);
-            ivFotoperfil.setImageBitmap(bitmap);
-        }
-    }
 }
+
