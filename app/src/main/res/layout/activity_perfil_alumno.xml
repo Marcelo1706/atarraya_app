@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".layout.perfil_alumno">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="parent">
+            <LinearLayout
+                android:id="@+id/linlay_foto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txt_titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Actualizar perfil"
+                    android:textAlignment="center"
+                    android:textColor="@color/oscuro"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/imv_fotoperfil"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_menu_camera"
+                        android:layout_gravity="center"/>
+
+                    <Button
+                        android:id="@+id/btn_subirfoto"
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext_focused"
+                        android:layout_gravity="center"
+                        android:text="Subir Nueva Foto"
+                        android:layout_margin="10dp"
+                        android:onClick="onClick"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linlay_opciones"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_nombreUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre de Usuario"
+                    android:textColor="@color/oscuro"
+                    android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/edtext_usuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:background="@drawable/rounded_edittext_focused"
+                    android:hint=""/>
+                <TextView
+                    android:id="@+id/txt_correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Correo Registrado"
+                    android:textColor="@color/oscuro"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/edtext_correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext_focused"
+                    android:padding="5dip"
+                    android:enabled="false"/>
+                <TextView
+                    android:id="@+id/txt_grado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Grado Actual"
+                    android:textColor="@color/oscuro"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/edtext_grado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext_focused"
+                    android:padding="5dip"
+                    android:enabled="false"/>
+                <TextView
+                    android:id="@+id/txt_Claveactual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Contraseña Actual"
+                    android:textColor="@color/oscuro"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtext_ClaveActual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext_focused"
+                    android:padding="5dip" />
+
+                <TextView
+                    android:id="@+id/txt_nuevacontra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Nueva Contraseña"
+                    android:textColor="@color/oscuro"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtext_nuevacontra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext_focused"
+                    android:padding="5dip" />
+
+                <TextView
+                    android:id="@+id/txt_confirmarcontra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Confirmar contraseña"
+                    android:textColor="@color/oscuro"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtext_confirmarcontra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext_focused"
+                    android:padding="5dip" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/enviar_datos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/atarraya"
+                android:text="Actualizar Datos"
+                android:textColor="@color/blanco" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
