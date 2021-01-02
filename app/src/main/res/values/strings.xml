@@ -91,4 +91,5 @@
     <string name="grados_y_secciones">Grados y Secciones</string>
     <string name="editar">Editar</string>
     <string name="desactivar">Desactivar</string>
+    <string name="drop">Eliminar</string>
 </resources>

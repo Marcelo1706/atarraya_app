@@ -122,6 +122,7 @@ public class menuNavegacion extends AppCompatActivity  {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK) {
             Uri path = data.getData();
+            fotoperfil=findViewById(R.id.imv_fotoperfil);
             fotoperfil.setImageURI(path);
 
         } else {

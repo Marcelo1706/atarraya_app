@@ -61,4 +61,9 @@ public class GradosSeccionesActivity extends AppCompatActivity {
                 return super.onContextItemSelected(item);
         }
     }
+
+    public void launchOrientadoresActivity(View v){
+        Intent intent = new Intent(getApplicationContext(), OrientadoresActivity.class);
+        startActivity(intent);
+    }
 }

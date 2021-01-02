@@ -22,6 +22,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".layout.perfil_alumno"></activity>
         <activity android:name=".layout.OrientadoresActivity" />
+        <activity android:name=".layout.EditarOrientadorActivity"></activity>
+        <activity android:name=".layout.OrientadoresActivity" />
         <activity android:name=".layout.EditarGradoActivity" />
         <activity android:name=".layout.crearversiculo_admin" />
         <activity android:name=".layout.versiculo_admin" />
