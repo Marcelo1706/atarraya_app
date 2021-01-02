@@ -26,7 +26,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.liceoatarraya.app.R;
 import com.liceoatarraya.app.cerrarApp;
 
-public class menuNavegacion extends AppCompatActivity {
+public class menuNavegacion extends AppCompatActivity  {
     BottomNavigationView mbottomNavigationView;
     private AppBarConfiguration mAppBarConfiguration;
     ImageView fotoperfil;
