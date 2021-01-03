@@ -29,9 +29,7 @@ import java.util.Date;
  * create an instance of this fragment.
  */
 public class Menu extends Fragment {
-    TextView date_in;
-    ImageButton date_button;
-    // TODO: Rename parameter arguments, choose names that match
+        // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -68,39 +66,8 @@ public class Menu extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
-            date_in= date_in.findViewById(R.id.tv_fechamenu);
-            date_button= date_button.findViewById(R.id.btn_consultarmenu);
 
-            date_in.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    showDateDialog(date_in);
-                }
-            });
-            /*date_button.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    showDateDialog(date_button);
-                }
-            });
-            */
         }
-    }
-
-    private void showDateDialog(final TextView date_in) {
-        final Calendar calendar= Calendar.getInstance();
-        DatePickerDialog.OnDateSetListener dateSetListener=new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                calendar.set(Calendar.YEAR,year);
-                calendar.set(Calendar.MONTH,month);
-                calendar.set(Calendar.DAY_OF_MONTH,dayOfMonth);
-                SimpleDateFormat simpleDateFormat= new SimpleDateFormat("dd-MM-yy");
-                date_in.setText(simpleDateFormat.format(calendar.getTime()));
-            }
-        };
-        new DatePickerDialog(getActivity().getApplicationContext(),dateSetListener,calendar.get(calendar.YEAR),
-                calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH)).show();
     }
 
     @Override

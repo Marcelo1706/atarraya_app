@@ -1,6 +1,7 @@
 package com.liceoatarraya.app.layout;
 
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -8,7 +9,10 @@ import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.DatePicker;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -26,62 +30,98 @@ import com.google.android.material.navigation.NavigationView;
 import com.liceoatarraya.app.R;
 import com.liceoatarraya.app.cerrarApp;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 public class menuNavegacion extends AppCompatActivity  {
     BottomNavigationView mbottomNavigationView;
     private AppBarConfiguration mAppBarConfiguration;
     ImageView fotoperfil;
+    TextView fechaConsulta_menu;
+    ImageButton consultarmenu;
+    Calendar calendar;
+    DatePickerDialog.OnDateSetListener setListener;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_menu_navegacion);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+        //Instancia para fragment perfil (subir foto)
         fotoperfil=findViewById(R.id.imv_fotoperfil);
-        mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.mensajes, R.id.notificaciones, R.id.perfil, R.id.menu, R.id.salir)
-                .setDrawerLayout(drawer)
-                .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
-        NavigationUI.setupWithNavController(navigationView, navController);
 
-        /*
-        CÓDIGOS PARA MENU INFERIOR
-         */
-        mbottomNavigationView = findViewById(R.id.bottomNavigationView);
-        mbottomNavigationView.setSelectedItemId(R.id.menu_home);
+        setContentView(R.layout.activity_menu_navegacion);
+            Toolbar toolbar = findViewById(R.id.toolbar);
+            setSupportActionBar(toolbar);
+            DrawerLayout drawer = findViewById(R.id.drawer_layout);
+            NavigationView navigationView = findViewById(R.id.nav_view);
+            // Passing each menu ID as a set of Ids because each
+            // menu should be considered as top level destinations.
+            mAppBarConfiguration = new AppBarConfiguration.Builder(
+                    R.id.nav_home, R.id.mensajes, R.id.notificaciones, R.id.perfil, R.id.menu, R.id.salir)
+                    .setDrawerLayout(drawer)
+                    .build();
+            NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+            NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
+            NavigationUI.setupWithNavController(navigationView, navController);
 
-        mbottomNavigationView.setOnNavigationItemSelectedListener(item -> {
-            //IF PARA CONTROLAR HACIA QUE ACTIVITY ME DEBE ENVIAR AL UTILIZAR EL MENU INFERIOR
-            if (item.getItemId() == R.id.menu_home) {
-                startActivity(new Intent(getApplicationContext(), menuNavegacion.class));
-                overridePendingTransition(0, 0);
+            /*
+            CÓDIGOS PARA MENU INFERIOR
+             */
+            mbottomNavigationView = findViewById(R.id.bottomNavigationView);
+            mbottomNavigationView.setSelectedItemId(R.id.menu_home);
+
+            mbottomNavigationView.setOnNavigationItemSelectedListener(item -> {
+                //IF PARA CONTROLAR HACIA QUE ACTIVITY ME DEBE ENVIAR AL UTILIZAR EL MENU INFERIOR
+                if (item.getItemId() == R.id.menu_home) {
+                    startActivity(new Intent(getApplicationContext(), menuNavegacion.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                }
+                if (item.getItemId() == R.id.menu_aulavirtual) {
+                    startActivity(new Intent(getApplicationContext(), AulaVirtualActivity.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                }
+                if (item.getItemId() == R.id.menu_calendario) {
+                    startActivity(new Intent(getApplicationContext(), calendario_activity.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                }
+                if (item.getItemId() == R.id.menu_calificaciones) {
+                    startActivity(new Intent(getApplicationContext(), calificaciones_activity.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                }
                 return true;
+            });
+        // Instancia para fragment menu
+        fechaConsulta_menu = findViewById(R.id.tv_fechamenu);
+        consultarmenu = findViewById(R.id.btn_consultarmenu);
+        Calendar calendar = Calendar.getInstance();
+        final int year = calendar.get(Calendar.YEAR);
+        final int month = calendar.get(Calendar.MONTH);
+        final int day = calendar.get(Calendar.DAY_OF_MONTH);
+
+        consultarmenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatePickerDialog datePickerDialog = new DatePickerDialog(
+                        menuNavegacion.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int month, int day) {
+                        month=month+1;
+                        String date = day+"/"+month+"/"+year;
+                        fechaConsulta_menu=findViewById(R.id.tv_fechamenu);
+                        fechaConsulta_menu.setText(date);
+                    }
+                },year,month,day);
+                datePickerDialog.show();
             }
-            if (item.getItemId() == R.id.menu_aulavirtual) {
-                startActivity(new Intent(getApplicationContext(), AulaVirtualActivity.class));
-                overridePendingTransition(0, 0);
-                return true;
-            }
-            if (item.getItemId() == R.id.menu_calendario) {
-                startActivity(new Intent(getApplicationContext(), calendario_activity.class));
-                overridePendingTransition(0, 0);
-                return true;
-            }
-            if (item.getItemId() == R.id.menu_calificaciones) {
-                startActivity(new Intent(getApplicationContext(), calificaciones_activity.class));
-                overridePendingTransition(0, 0);
-                return true;
-            }
-            return true;
         });
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
