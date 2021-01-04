@@ -92,4 +92,6 @@
     <string name="editar">Editar</string>
     <string name="desactivar">Desactivar</string>
     <string name="drop">Eliminar</string>
+    <string name="indicaciones_tareaspendientes">A continuación se encuentra una lista detallada de las tareas y actividades pendientes de su realización, le sugerimos tomar nota de las fechas acá mencionadas para realizar una entrega puntual de cada materia.</string>
+    <string name="indicaciones_avSistema">A continuación se muestra una lista con los avisos colocados por los administradores del Sistema, le sugerimos ante cualquier duda consultar con su Maestro guía o directamente en el área de dirección.</string>
 </resources>

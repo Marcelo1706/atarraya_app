@@ -56,7 +56,7 @@
                     android:layout_gravity="center"
                     android:text="Subir Nueva Foto"
                     android:layout_margin="10dp"
-                    android:onClick="onClick"/>
+                    android:onClick="onClicksubirFoto"/>
 
             </LinearLayout>
         </LinearLayout>

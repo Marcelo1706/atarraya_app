@@ -37,7 +37,7 @@
                 android:layout_marginTop="32dp">
 
                 <TextView
-                    android:id="@+id/tv_fechamenu"
+                    android:id="@+id/tv_fechamenu_alumno"
                     android:layout_width="250dp"
                     android:layout_height="match_parent"
                     android:hint="@string/edtext_datein"
@@ -48,7 +48,7 @@
                     android:layout_height="match_parent"/>
 
                 <ImageButton
-                    android:id="@+id/btn_consultarmenu"
+                    android:id="@+id/btn_consultarmenu_alumno"
                     android:layout_width="55dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0"
@@ -62,7 +62,7 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/enviar_datos"
+                    android:id="@+id/btn_consultarcomida_alumno"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
@@ -79,7 +79,7 @@
             </LinearLayout>
 
             <ListView
-                android:id="@+id/ltv_comidadisponible"
+                android:id="@+id/ltv_comidadisponible_alumno"
                 android:layout_width="match_parent"
                 android:layout_height="433dp"
                 android:layout_marginTop="15dp" />

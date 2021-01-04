@@ -18,6 +18,7 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.DialogFragment;
 import androidx.navigation.NavController;
@@ -33,14 +34,15 @@ import com.liceoatarraya.app.cerrarApp;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class menuNavegacion extends AppCompatActivity  {
-    BottomNavigationView mbottomNavigationView;
+public class menuNavegacion extends AppCompatActivity implements View.OnClickListener {
+
+    CardView tareaspendientes, avisosSistema;
     private AppBarConfiguration mAppBarConfiguration;
+    BottomNavigationView mbottomNavigationView;
     ImageView fotoperfil;
     TextView fechaConsulta_menu;
     ImageButton consultarmenu;
-    Calendar calendar;
-    DatePickerDialog.OnDateSetListener setListener;
+
 
 
 
@@ -96,9 +98,9 @@ public class menuNavegacion extends AppCompatActivity  {
                 }
                 return true;
             });
-        // Instancia para fragment menu
-        fechaConsulta_menu = findViewById(R.id.tv_fechamenu);
-        consultarmenu = findViewById(R.id.btn_consultarmenu);
+        /*Instancia para fragment menu
+        fechaConsulta_menu = findViewById(R.id.tv_fechamenu_alumno);
+        consultarmenu = findViewById(R.id.btn_consultarmenu_alumno);
         Calendar calendar = Calendar.getInstance();
         final int year = calendar.get(Calendar.YEAR);
         final int month = calendar.get(Calendar.MONTH);
@@ -113,15 +115,18 @@ public class menuNavegacion extends AppCompatActivity  {
                     public void onDateSet(DatePicker view, int year, int month, int day) {
                         month=month+1;
                         String date = day+"/"+month+"/"+year;
-                        fechaConsulta_menu=findViewById(R.id.tv_fechamenu);
+                        fechaConsulta_menu=findViewById(R.id.tv_fechamenu_alumno);
                         fechaConsulta_menu.setText(date);
                     }
                 },year,month,day);
                 datePickerDialog.show();
             }
-        });
-    }
+        });*/
 
+        //Instanciando las tarjetas
+        tareaspendientes=findViewById(R.id.cv_mistareas);
+        avisosSistema=findViewById(R.id.cv_avisossistema);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -147,8 +152,8 @@ public class menuNavegacion extends AppCompatActivity  {
         dialogo.show(getSupportFragmentManager(),"salirapp");
     }
 
-    public void onClick(View view) {
-        subirfotoperfil();
+    public void onClickSubirFoto(View view) {
+
     }
 
     private void subirfotoperfil() {
@@ -169,4 +174,26 @@ public class menuNavegacion extends AppCompatActivity  {
             Toast.makeText(this, "IMAGEN NO SELECCIONADA", Toast.LENGTH_SHORT).show();
         }
     }
+
+    public void onClicksubirFoto(View v) {
+        subirfotoperfil();
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent intent;
+        switch (v.getId()){
+            case R.id.cv_mistareas:
+                intent = new Intent (this, tareaspendientes_alumno.class);
+                startActivityForResult(intent, 0);
+                break;
+            case R.id.cv_avisossistema:
+                intent = new Intent (this, avisosSistema_modalumno.class);
+                startActivityForResult(intent, 0);
+                break;
+            default:break;
+        }
+
+    }
+
 }
