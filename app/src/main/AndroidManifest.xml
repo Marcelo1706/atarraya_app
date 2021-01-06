@@ -73,6 +73,8 @@
         <activity android:name=".layout.rolesdocente_admin" />
         <activity android:name=".layout.registrardocente_admin" />
         <activity android:name=".layout.cambiarroldocente" />
+        <activity android:name=".layout.registrarequipo" />
+        <activity android:name=".layout.adminreservasequipo_admin" />
         <activity
             android:name=".layout.menuNavegacion"
             android:label="@string/title_activity_menu_navegacion"
