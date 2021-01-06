@@ -25,7 +25,7 @@
         <activity android:name=".layout.perfil_alumno" />
         <activity android:name=".layout.OrientadoresActivity" />
         <activity android:name=".layout.EditarOrientadorActivity" />
-        <activity android:name=".layout.OrientadoresActivity" />
+       <!-- <activity android:name=".layout.OrientadoresActivity" />-->
         <activity android:name=".layout.EditarGradoActivity" />
         <activity android:name=".layout.crearversiculo_admin" />
         <activity android:name=".layout.versiculo_admin" />
@@ -69,6 +69,10 @@
         <activity android:name=".layout.calendario_activity" />
         <activity android:name=".layout.aulavirtual_activity" />
         <activity android:name=".layout.calendario_maestro" />
+        <activity android:name=".layout.plantadocente_admin" />
+        <activity android:name=".layout.rolesdocente_admin" />
+        <activity android:name=".layout.registrardocente_admin" />
+        <activity android:name=".layout.cambiarroldocente" />
         <activity
             android:name=".layout.menuNavegacion"
             android:label="@string/title_activity_menu_navegacion"
