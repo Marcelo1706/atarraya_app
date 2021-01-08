@@ -6,130 +6,134 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     tools:context=".layout.agregarEventos">
+
     <ScrollView
         android:id="@+id/sv_inputs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <LinearLayout
-        android:id="@+id/ll_inputs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="25dp">
-        <TextView
-            android:id="@+id/tv_nombreevento"
-            android:text="Ingrese el nombre del evento"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/oscuro"
-            android:textSize="18sp"/>
-        <EditText
-            android:id="@+id/edt_nombreEvento"
-            android:hint="..."
+        android:layout_width="375dp"
+        android:layout_height="454dp">
+
+        <LinearLayout
+            android:id="@+id/ll_inputs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_nombreevento"
-            android:padding="5dip"
-            android:background="@drawable/rounded_edittext_focused"/>
-        <TextView
-            android:id="@+id/tv_desde"
-            android:text="Fecha Inicio"
-            android:layout_below="@id/edt_nombreEvento"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/oscuro"
-            android:textSize="18sp"/>
-         <EditText
-            android:id="@+id/edt_fechadesde"
-            android:layout_below="@id/tv_desde"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-             android:padding="5dip"
-             android:background="@drawable/rounded_edittext_focused"/>
-        <TextView
-            android:id="@+id/tv_horainicio"
-            android:text="Hora Inicio"
-            android:layout_below="@id/edt_fechadesde"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/oscuro"
-            android:textSize="18sp"/>
-        <EditText
-            android:id="@+id/edt_horainicio"
-            android:layout_below="@id/tv_horainicio"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dip"
-            android:background="@drawable/rounded_edittext_focused"/>
-        <TextView
-            android:id="@+id/tv_hasta"
-            android:text="Fecha Final"
-            android:layout_below="@id/edt_horainicio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/oscuro"
-            android:textSize="18sp"/>
-        <EditText
-            android:id="@+id/edt_fechahasta"
-            android:layout_below="@id/tv_hasta"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dip"
-            android:background="@drawable/rounded_edittext_focused"/>
-        <TextView
-            android:id="@+id/tv_horafinal"
-            android:text="Hora Final"
-            android:layout_below="@id/edt_fechahasta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/oscuro"
-            android:textSize="18sp"/>
-        <EditText
-            android:id="@+id/edt_horafinal"
-            android:layout_below="@id/tv_horafinal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dip"
-            android:background="@drawable/rounded_edittext_focused"/>
-        <TextView
-            android:id="@+id/tv_desc_evento"
-            android:text="Descripción del evento"
-            android:layout_below="@id/edt_horafinal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/oscuro"
-            android:textSize="18sp"/>
-        <EditText
-            android:id="@+id/edt_descripcion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_desc_evento"
-            android:padding="5dip"
-            android:background="@drawable/rounded_edittext_focused"/>
-    </LinearLayout>
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nombreevento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ingrese_el_nombre_del_evento"
+                android:textColor="@color/oscuro"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_nombreEvento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext_focused"
+                android:padding="5dip" />
+
+            <TextView
+                android:id="@+id/tv_desde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fecha_inicio"
+                android:textColor="@color/oscuro"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_fechadesde"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext_focused"
+                android:padding="5dip" />
+
+            <TextView
+                android:id="@+id/tv_horainicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hora_inicio"
+                android:textColor="@color/oscuro"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_horainicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext_focused"
+                android:padding="5dip" />
+
+            <TextView
+                android:id="@+id/tv_hasta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fecha_final"
+                android:textColor="@color/oscuro"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_fechahasta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext_focused"
+                android:padding="5dip" />
+
+            <TextView
+                android:id="@+id/tv_horafinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hora_final"
+                android:textColor="@color/oscuro"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_horafinal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext_focused"
+                android:padding="5dip" />
+
+            <TextView
+                android:id="@+id/tv_desc_evento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/descrip_evento"
+                android:textColor="@color/oscuro"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext_focused"
+                android:padding="5dip" />
+        </LinearLayout>
     </ScrollView>
+
     <Button
         android:id="@+id/btn_guardarevento"
-        android:layout_width="129dp"
+        android:layout_width="159dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/sv_inputs"
         android:layout_marginTop="50dp"
         android:background="#09A50F"
-        android:text="Guardar"
+        android:text="@string/guardar_evento"
         android:textColor="#fff"
-        android:textSize="20dp" />
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/btn_cancelarevento"
-        android:layout_width="128dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@id/btn_guardarevento"
         android:layout_alignBottom="@id/btn_guardarevento"
-        android:layout_alignParentRight="true"
-        android:text="Cancelar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="0dp"
+        android:background="#E91E63"
+        android:text="@string/cancelar_evento"
         android:textColor="#fff"
-        android:textSize="20dp"
-        android:background="#E91E63"/>
+        android:textSize="18sp" />
 
 
 

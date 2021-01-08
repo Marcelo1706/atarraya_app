@@ -94,4 +94,23 @@
     <string name="drop">Eliminar</string>
     <string name="indicaciones_tareaspendientes">A continuación se encuentra una lista detallada de las tareas y actividades pendientes de su realización, le sugerimos tomar nota de las fechas acá mencionadas para realizar una entrega puntual de cada materia.</string>
     <string name="indicaciones_avSistema">A continuación se muestra una lista con los avisos colocados por los administradores del Sistema, le sugerimos ante cualquier duda consultar con su Maestro guía o directamente en el área de dirección.</string>
+    <string name="boton_consultarMenu">Consultar menú</string>
+    <string name="actualizar_perfil">Actualizar perfil</string>
+    <string name="boton_subirnuevafoto">Subir Nueva Foto</string>
+    <string name="nombre_de_usuario">Nombre de Usuario</string>
+    <string name="correo_registrado">Correo Registrado</string>
+    <string name="grado_actual">Grado Actual</string>
+    <string name="contra_actual">Contraseña Actual</string>
+    <string name="nueva_contra">Nueva Contraseña</string>
+    <string name="confirmar_contra">Confirmar contraseña</string>
+    <string name="actualizar_datos">Actualizar Datos</string>
+    <string name="indicaciones_calendario">INDICACIONES</string>
+    <string name="ingrese_el_nombre_del_evento">Ingrese el nombre del evento</string>
+    <string name="fecha_inicio">Fecha Inicio</string>
+    <string name="hora_inicio">Hora Inicio</string>
+    <string name="fecha_final">Fecha Final</string>
+    <string name="hora_final">Hora Final</string>
+    <string name="descrip_evento">Descripción del evento</string>
+    <string name="guardar_evento">Guardar Evento</string>
+    <string name="cancelar_evento">Cancelar Evento</string>
 </resources>

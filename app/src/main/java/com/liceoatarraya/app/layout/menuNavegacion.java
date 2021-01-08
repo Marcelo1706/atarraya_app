@@ -152,9 +152,6 @@ public class menuNavegacion extends AppCompatActivity implements View.OnClickLis
         dialogo.show(getSupportFragmentManager(),"salirapp");
     }
 
-    public void onClickSubirFoto(View view) {
-
-    }
 
     private void subirfotoperfil() {
         Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);

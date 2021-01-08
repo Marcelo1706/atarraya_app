@@ -22,7 +22,7 @@
                android:layout_height="match_parent"
                 android:layout_width="wrap_content">
                 <TextView
-                    android:id="@+id/informacion"
+                    android:id="@+id/tv_informacion"
                     android:text="@string/txtView_informacion"
                     android:textSize="15sp"
                     android:textAlignment="center"
@@ -43,15 +43,12 @@
                     android:hint="@string/edtext_datein"
                     android:textAlignment="center"
                     android:inputType="none" />
-                <TextView
-                    android:layout_width="30dp"
-                    android:layout_height="match_parent"/>
 
                 <ImageButton
-                    android:id="@+id/btn_consultarmenu_alumno"
-                    android:layout_width="55dp"
+                    android:id="@+id/btn_consultarfechasmenu_al"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0"
+                    android:layout_weight="1"
                     android:background="@color/atarraya"
                     android:src="@drawable/ic_food" />
             </LinearLayout>
@@ -67,15 +64,18 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:background="@color/colorPrimary"
-                    android:text="Consultar menú"
+                    android:text="@string/boton_consultarMenu"
                     android:textColor="@color/blanco" />
 
                 <TextView
+                    android:id="@+id/tv_platillosdisponibles"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:text="Platillos disponibles"
-                    android:textSize="15sp" />
+                    android:text="@string/platillos_disponibles"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"/>
             </LinearLayout>
 
             <ListView

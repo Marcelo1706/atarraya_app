@@ -28,10 +28,10 @@
 
 
             <TextView
-                android:id="@+id/txt_titulo"
+                android:id="@+id/tv_titulo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Actualizar perfil"
+                android:text="@string/actualizar_perfil"
                 android:textAlignment="center"
                 android:textColor="@color/oscuro"
                 android:textSize="18sp" />
@@ -54,7 +54,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_edittext_focused"
                     android:layout_gravity="center"
-                    android:text="Subir Nueva Foto"
+                    android:text="@string/boton_subirnuevafoto"
                     android:layout_margin="10dp"
                     android:onClick="onClicksubirFoto"/>
 
@@ -66,103 +66,103 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
                 <TextView
-                    android:id="@+id/txt_nombreUsuario"
+                    android:id="@+id/tv_nombreUsuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nombre de Usuario"
+                    android:text="@string/nombre_de_usuario"
                     android:textColor="@color/oscuro"
                     android:textSize="18sp" />
                 <EditText
-                    android:id="@+id/edtext_usuario"
+                    android:id="@+id/edt_usuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="5dip"
                     android:background="@drawable/rounded_edittext_focused"/>
                 <TextView
-                    android:id="@+id/txt_correo"
+                    android:id="@+id/tv_correo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Correo Registrado"
+                    android:text="@string/correo_registrado"
                     android:textColor="@color/oscuro"
                     android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/edtext_correo"
+                    android:id="@+id/edt_correo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_edittext_focused"
                     android:padding="5dip"
                     android:enabled="false"/>
                 <TextView
-                    android:id="@+id/txt_grado"
+                    android:id="@+id/tv_gradoactual"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Grado Actual"
+                    android:text="@string/grado_actual"
                     android:textColor="@color/oscuro"
                     android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/edtext_grado"
+                    android:id="@+id/edt_gradoActual"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_edittext_focused"
                     android:padding="5dip"
                     android:enabled="false"/>
                 <TextView
-                    android:id="@+id/txt_Claveactual"
+                    android:id="@+id/tv_Claveactual"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="Contraseña Actual"
+                    android:text="@string/contra_actual"
                     android:textColor="@color/oscuro"
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/edtext_ClaveActual"
+                    android:id="@+id/edt_ClaveActual"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_edittext_focused"
                     android:padding="5dip" />
 
                 <TextView
-                    android:id="@+id/txt_nuevacontra"
+                    android:id="@+id/tv_nuevacontra"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="Nueva Contraseña"
+                    android:text="@string/nueva_contra"
                     android:textColor="@color/oscuro"
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/edtext_nuevacontra"
+                    android:id="@+id/edt_nuevacontra"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_edittext_focused"
                     android:padding="5dip" />
 
                 <TextView
-                    android:id="@+id/txt_confirmarcontra"
+                    android:id="@+id/tv_confirmarcontra"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="Confirmar contraseña"
+                    android:text="@string/confirmar_contra"
                     android:textColor="@color/oscuro"
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/edtext_confirmarcontra"
+                    android:id="@+id/edt_confirmarcontra"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_edittext_focused"
                     android:padding="5dip" />
             </LinearLayout>
         <Button
-            android:id="@+id/enviar_datos"
+            android:id="@+id/btn_actualizarPerfil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:background="@color/atarraya"
-            android:text="Actualizar Datos"
+            android:text="@string/actualizar_datos"
             android:textColor="@color/blanco" />
     </LinearLayout>
     </ScrollView>

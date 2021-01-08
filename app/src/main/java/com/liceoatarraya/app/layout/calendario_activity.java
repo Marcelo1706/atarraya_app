@@ -21,7 +21,7 @@ public class calendario_activity extends AppCompatActivity implements CalendarVi
         setContentView(R.layout.calendario_activity);
         setTitle("Calendario");
         //== Instanciando el calendario para la opción de agenda
-        calendarView= findViewById(R.id.calendar);
+        calendarView= findViewById(R.id.cal_alumno);
         calendarView.setOnDateChangeListener(this);
         calbottomNavigationView= findViewById(R.id.bnv_calendario);
         calbottomNavigationView.setSelectedItemId(R.id.menu_calendario);
