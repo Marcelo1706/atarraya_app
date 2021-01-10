@@ -13,17 +13,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="INDICACIONES"
+            android:text="@string/indicaciones_calendario"
             android:textAlignment="center"
             />
         <TextView
+            android:id="@+id/tv_indicacionescal_maestro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:text="@string/indicacionescalendario"
             />
     <CalendarView
-        android:id="@+id/calendar"
+        android:id="@+id/cal_maestro"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"/>

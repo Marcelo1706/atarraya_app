@@ -20,12 +20,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".layout.avisosSistema_modalumno"></activity>
+        <activity android:name=".layout.eliminarcontenido_maestro"></activity>
+        <activity android:name=".layout.avisosSistema_modalumno" />
         <activity android:name=".layout.tareaspendientes_alumno" />
         <activity android:name=".layout.perfil_alumno" />
         <activity android:name=".layout.OrientadoresActivity" />
-        <activity android:name=".layout.EditarOrientadorActivity" />
-       <!-- <activity android:name=".layout.OrientadoresActivity" />-->
+        <activity android:name=".layout.EditarOrientadorActivity" /> <!-- <activity android:name=".layout.OrientadoresActivity" /> -->
         <activity android:name=".layout.EditarGradoActivity" />
         <activity android:name=".layout.crearversiculo_admin" />
         <activity android:name=".layout.versiculo_admin" />

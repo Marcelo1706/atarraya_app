@@ -26,7 +26,7 @@ public class calendario_maestro extends AppCompatActivity implements CalendarVie
         setContentView(R.layout.calendario_maestro);
         setTitle("Calendario");
         //== Instanciando el calendario para la opción de agenda
-        calendarView=(CalendarView)findViewById(R.id.calendar);
+        calendarView=(CalendarView)findViewById(R.id.cal_maestro);
         calendarView.setOnDateChangeListener((CalendarView.OnDateChangeListener) this);
         calbottomNavigationView=(BottomNavigationView)findViewById(R.id.bnv_calendario);
     }

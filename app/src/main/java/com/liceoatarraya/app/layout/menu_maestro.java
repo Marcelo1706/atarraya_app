@@ -34,8 +34,8 @@ public class menu_maestro extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_maestro);
-        date_in = findViewById(R.id.tv_fechamenu);
-        date_button = findViewById(R.id.btn_consultarmenu);
+        date_in = findViewById(R.id.tv_fechamenu_maestro);
+        date_button = findViewById(R.id.btn_consultarfechamenu_ma);
         Calendar calendar = Calendar.getInstance();
         final int year = calendar.get(Calendar.YEAR);
         final int month = calendar.get(Calendar.MONTH);

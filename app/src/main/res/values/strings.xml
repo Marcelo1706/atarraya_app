@@ -86,7 +86,7 @@
     <string name="line">___________________________________________________</string>
     <string name="seleccion_materia">Seleccione una materia para continuar</string>
     <string name="subject_alerts">Avisos Generales de la Materia</string>
-    <string name="indicaciones_contenido">Indicaciones contenido</string>
+    <string name="indicaciones_contenido">El contenido que añada acá, aparecerá en pestañas para el estudiante. Se sugiere que en esta parte añada las unidades de estudio, y para cada tema, añada secciones dentro de cada unidad</string>
     <string name="asignaturas">Asignaturas</string>
     <string name="grados_y_secciones">Grados y Secciones</string>
     <string name="editar">Editar</string>
@@ -113,4 +113,9 @@
     <string name="descrip_evento">Descripción del evento</string>
     <string name="guardar_evento">Guardar Evento</string>
     <string name="cancelar_evento">Cancelar Evento</string>
+    <string name="nombre_del_maestro">Nombre del Maestro</string>
+    <string name="titulo_contenidosmaestro">CONTENIDOS</string>
+    <string name="seleccionarmateria_contmaestros">Seleccione una materia:</string>
+    <string name="boton_agregar_contenido">AGREGAR CONTENIDO</string>
+    <string name="eliminar_contenidomaestro">ELIMINAR CONTENIDO</string>
 </resources>

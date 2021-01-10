@@ -13,7 +13,7 @@
         android:id="@+id/linearImagenPortada"
         android:orientation="horizontal">
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/imv_bannermaestro"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="@string/descripcion"
@@ -34,18 +34,18 @@
             android:orientation="horizontal"
             android:layout_marginLeft="10sp">
             <TextView
-                android:id="@+id/txtBienvenido"
+                android:id="@+id/tv_Bienvenidomaestro"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/bienvenido"
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/txtNombreAcceso_maestro"
+                android:id="@+id/tv_NombreAcceso_maestro"
                 android:layout_width="252dp"
                 android:layout_height="32dp"
-                android:hint="Nombre del Maestro"
-                android:layout_marginLeft="10dp"
+                android:hint="@string/nombre_del_maestro"
+                android:layout_marginStart="10dp"
                 android:textSize="15sp"/>
         </LinearLayout>
         <LinearLayout
@@ -54,7 +54,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/txtPalabrasBienvenida"
+                android:id="@+id/tv_PalabrasBienvenidaMaestro"
                 android:layout_width="393dp"
                 android:layout_height="198dp"
                 android:layout_marginTop="40dp"

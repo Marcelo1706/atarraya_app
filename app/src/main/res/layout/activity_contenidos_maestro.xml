@@ -26,12 +26,12 @@
 
                 <TextView
                     android:id="@+id/tv_contenidos"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="CONTENIDOS"
+                    android:text="@string/titulo_contenidosmaestro"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -39,7 +39,7 @@
 
             <View
                 android:id="@+id/divider2"
-                android:layout_width="2in"
+                android:layout_width="300dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
                 android:background="@color/atarraya" />
@@ -71,9 +71,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="20dp"
-                    android:text="Seleccione una materia:"
+                    android:text="@string/seleccionarmateria_contmaestros"
                     android:textColor="@color/oscuro"
                     android:textSize="18sp" />
 
@@ -81,7 +81,7 @@
                     android:id="@+id/sp_materiacontenido"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/spinner_style"/>
 
@@ -104,8 +104,8 @@
                     android:id="@+id/btn_agregarcontenido"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="AGREGAR CONTENIDO"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/boton_agregar_contenido"
                     android:background="@drawable/rounded_edittext_focused"
                     android:padding="15dp" />
             </LinearLayout>

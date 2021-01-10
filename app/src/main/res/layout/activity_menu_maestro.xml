@@ -32,7 +32,7 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="32dp">
                 <TextView
-                    android:id="@+id/tv_fechamenu"
+                    android:id="@+id/tv_fechamenu_maestro"
                     android:layout_width="250dp"
                     android:layout_height="match_parent"
                     android:text="@string/fecha"
@@ -44,7 +44,7 @@
                     android:layout_height="match_parent"/>
 
                 <ImageButton
-                    android:id="@+id/btn_consultarmenu"
+                    android:id="@+id/btn_consultarfechamenu_ma"
                     android:layout_width="55dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0"
@@ -59,7 +59,7 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/enviar_datos"
+                    android:id="@+id/btn_consultarcomida_maestro"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
@@ -74,7 +74,7 @@
                     android:text="@string/platillos_disponibles"
                     android:textSize="15sp" />
                 <ListView
-                    android:id="@+id/ltv_comidadisponible"
+                    android:id="@+id/ltv_comidadisponible_maestro"
                     android:layout_width="match_parent"
                     android:layout_height="433dp"
                     android:layout_marginTop="15dp" />
