@@ -26,12 +26,12 @@
 
             <TextView
                 android:id="@+id/tv_crearaviso"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="CREADOR DE AVISOS"
+                android:text="@string/creador_de_avisos"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -39,7 +39,7 @@
 
         <View
             android:id="@+id/divider2"
-            android:layout_width="2in"
+            android:layout_width="300dp"
             android:layout_height="1dp"
             android:layout_gravity="center"
             android:background="@color/atarraya" />
@@ -54,7 +54,7 @@
                 android:id="@+id/tv_indicacionesAviso"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:text="@string/indicaciones_crearAviso"
                 android:textColor="@color/oscuro"
                 android:textSize="18sp" />
@@ -70,7 +70,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Título del Aviso:"
+                android:text="@string/titulo_del_aviso"
                 android:textColor="@color/oscuro"
                 android:textSize="18sp" />
 
@@ -78,8 +78,8 @@
                 android:id="@+id/tv_nombreaviso"
                 android:layout_width="225dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:hint="Escriba aquí"
+                android:layout_marginStart="10dp"
+                android:hint="@string/escriba_aqu"
                 android:maxLength="50"/>
 
         </LinearLayout>
@@ -94,7 +94,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="CONTENIDO"
+                android:text="@string/contenido"
                 android:textColor="@color/oscuro"
                 android:textSize="18sp" />
 
@@ -108,12 +108,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="MENSAJE :"
+                android:text="@string/mensaje"
                 android:textColor="@color/oscuro"
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/et_mensajeaviso"
+                android:id="@+id/edt_mensajeaviso"
                 android:layout_width="match_parent"
                 android:layout_height="215dp"
                 android:ems="40"
@@ -126,11 +126,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Estado del Aviso "
+                android:text="@string/estado_del_aviso"
                 android:textColor="@color/oscuro"
                 android:textSize="18sp" />
 
             <RadioGroup
+                android:id="@+id/rgp_estadoaviso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -140,14 +141,14 @@
                     android:id="@+id/rbtn_opcActivado"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Activado" />
+                    android:text="@string/avisoactivado" />
 
                 <RadioButton
                     android:id="@+id/rbtn_opcDesactivado"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="Desactivado" />
+                    android:layout_marginStart="10dp"
+                    android:text="@string/avisodesactivado" />
             </RadioGroup>
         </LinearLayout>
         <LinearLayout
@@ -159,7 +160,7 @@
                 android:id="@+id/btn_guardaraviso"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="GUARDAR AVISO"
+                android:text="@string/guardar_aviso"
                 android:background="@drawable/rounded_edittext_focused"
                 android:backgroundTint="@color/atarraya"
                 android:padding="5dp"
@@ -168,8 +169,8 @@
                 android:id="@+id/btn_cancelaraviso"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CANCELAR "
-                android:layout_marginLeft="5dp"
+                android:text="@string/btncancelar"
+                android:layout_marginStart="5dp"
                 android:padding="5dp"
                 android:background="@drawable/rounded_edittext_focused"
                 android:backgroundTint="@color/pink"

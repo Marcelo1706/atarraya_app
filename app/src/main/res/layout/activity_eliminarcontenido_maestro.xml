@@ -71,32 +71,32 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:text="Título del Contenido:"
+                    android:text="@string/titulocontenido_maestro"
                     android:textColor="#838383"
                     android:textSize="18sp" />
 
-                <EditText
-                    android:id="@+id/edt_nombrecontenido"
+                <TextView
+                    android:id="@+id/tv_nombrecontenido_eliminar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:hint="Escriba el nombre aquí"
+                    android:hint="@string/nombrecontenido"
                     android:maxLength="50"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="266dp"
                 android:layout_margin="15dp"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="314dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:layout_marginStart="10dp"
-                    android:text="Visibilidad"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/visibilidad_contenido"
                     android:textColor="#838383"
                     android:textSize="18sp" />
 
@@ -104,62 +104,70 @@
                     android:id="@+id/divider3"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="15dp"
-                    android:background="@color/atarraya"
-                    android:layout_marginStart="10dp"/>
+                    android:background="@color/atarraya" />
 
 
                 <RadioGroup
-                    android:id="@+id/rbtn_visibilidadcontenido"
+                    android:id="@+id/rbtn_visibilidadcontenido_eliminar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
-                    android:orientation="horizontal"
-                    android:layout_marginStart="10dp">
+                    android:orientation="horizontal">
 
                     <RadioButton
                         android:id="@+id/rbtn_opcVisible"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="VISIBLE (Pueden verlo)" />
+                        android:enabled="false"
+                        android:text="@string/contvisible" />
 
                     <RadioButton
                         android:id="@+id/rbtn_opcOculto"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:text="OCULTO" />
+                        android:layout_marginStart="10dp"
+                        android:enabled="false"
+                        android:text="@string/contoculto" />
                 </RadioGroup>
+
                 <TextView
                     android:layout_width="314dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
                     android:layout_marginStart="10dp"
-                    android:text="Seleccione Contenido"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/contenido_cargado"
                     android:textColor="#838383"
                     android:textSize="18sp" />
-                <Button
-                    android:id="@+id/btn_subircontenido"
-                    android:layout_width="match_parent"
+
+                <TextView
+                    android:id="@+id/tv_nombrecontenidosubido_eliminar"
+                    android:layout_width="314dp"
                     android:layout_height="wrap_content"
-                    android:text="Subir Contenido"
-                    android:background="@drawable/rounded_edittext_focused"
-                    android:drawableLeft="@drawable/ic_up"
-                    android:padding="15dp"/>
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/archivosubido_pdf"
+                    android:textColor="#838383"
+                    android:textSize="18sp" />
+
                 <TextView
                     android:layout_width="314dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
                     android:layout_marginStart="10dp"
-                    android:text="Seleccione la Materia"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/spinnerseleccione_la_materia"
                     android:textColor="#838383"
                     android:textSize="18sp" />
-                <Spinner
-                    android:id="@+id/sp_materia_aggcontenido"
-                    android:layout_width="match_parent"
+
+                <TextView
+                    android:id="@+id/tv_materiacontenido"
+                    android:layout_width="314dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginStart="10dp"
+                    android:hint="@string/materia_seleccionada"
+                    android:layout_marginTop="10dp" />
 
             </LinearLayout>
             <LinearLayout
@@ -169,12 +177,12 @@
                 android:gravity="center"
                 android:layout_marginTop="15dp">
                 <Button
-                    android:id="@+id/btn_guardarcontenido"
+                    android:id="@+id/btn_eliminarcontenido"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="GUARDAR Contenido"
+                    android:text="@string/eliminar_contenido"
                     android:background="@drawable/rounded_edittext_focused"
-                    android:backgroundTint="@color/atarraya"
+                    android:backgroundTint="#8C0707"
                     android:padding="5dp"
                     android:textColor="@color/blanco"/>
             </LinearLayout>

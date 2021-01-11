@@ -26,12 +26,12 @@
 
                 <TextView
                     android:id="@+id/tv_crearcontenido"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="SUBIR / MODIFICAR CONTENIDO"
+                    android:text="@string/subir_modificar_contenido"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -39,7 +39,7 @@
 
             <View
                 android:id="@+id/divider2"
-                android:layout_width="2in"
+                android:layout_width="300dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
                 android:background="@color/atarraya" />
@@ -54,7 +54,7 @@
                     android:id="@+id/tv_indicacionesCont"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:text="@string/indicaciones_contenido"
                     android:textColor="@color/oscuro"
                     android:textSize="18sp" />
@@ -71,7 +71,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:text="Título del Contenido:"
+                    android:text="@string/titulocontenido_maestro"
                     android:textColor="#838383"
                     android:textSize="18sp" />
 
@@ -80,7 +80,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:hint="Escriba el nombre aquí"
+                    android:hint="@string/nombrecontenido"
                     android:maxLength="50"/>
 
             </LinearLayout>
@@ -96,7 +96,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginStart="10dp"
-                    android:text="Visibilidad"
+                    android:text="@string/visibilidad_contenido"
                     android:textColor="#838383"
                     android:textSize="18sp" />
 
@@ -121,44 +121,44 @@
                         android:id="@+id/rbtn_opcVisible"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="VISIBLE (Pueden verlo)" />
+                        android:text="@string/contvisible" />
 
                     <RadioButton
                         android:id="@+id/rbtn_opcOculto"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:text="OCULTO" />
+                        android:layout_marginStart="10dp"
+                        android:text="@string/contoculto" />
                 </RadioGroup>
                 <TextView
                     android:layout_width="314dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:layout_marginStart="10dp"
-                    android:text="Seleccione Contenido"
+                    android:text="@string/seleccione_contenido"
                     android:textColor="#838383"
                     android:textSize="18sp" />
                 <Button
                     android:id="@+id/btn_subircontenido"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Subir Contenido"
+                    android:text="@string/botonsubir_contenido"
                     android:background="@drawable/rounded_edittext_focused"
-                    android:drawableLeft="@drawable/ic_up"
+                    android:drawableStart="@drawable/ic_up"
                     android:padding="15dp"/>
                 <TextView
                     android:layout_width="314dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:layout_marginStart="10dp"
-                    android:text="Seleccione la Materia"
+                    android:text="@string/spinnerseleccione_la_materia"
                     android:textColor="#838383"
                     android:textSize="18sp" />
                 <Spinner
                     android:id="@+id/sp_materia_aggcontenido"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"/>
 
             </LinearLayout>
@@ -172,7 +172,7 @@
                     android:id="@+id/btn_guardarcontenido"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="GUARDAR Contenido"
+                    android:text="@string/botonguardar_contenido"
                     android:background="@drawable/rounded_edittext_focused"
                     android:backgroundTint="@color/atarraya"
                     android:padding="5dp"

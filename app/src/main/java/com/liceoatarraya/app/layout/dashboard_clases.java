@@ -41,7 +41,7 @@ public class dashboard_clases extends AppCompatActivity implements View.OnClickL
                 startActivityForResult(intenta1, 0);
                 break;
             case R.id.cv_vercontenido:
-                intenta2 = new Intent (this, reportes_maestro.class);
+                intenta2 = new Intent (this, vercontenidoclases_maestro.class);
                 startActivityForResult(intenta2, 0);
                 break;
             case R.id.cv_avisosmateria:
@@ -49,9 +49,11 @@ public class dashboard_clases extends AppCompatActivity implements View.OnClickL
                 startActivityForResult(intenta3,0);
                 break;
             case R.id.cv_adminpruebas:
+                intenta4 = new Intent (this, adminstrarpruebas_maestro.class);
+                startActivityForResult(intenta4,0);
                 break;
             case R.id.cv_adminactividades:
-                intenta5 = new Intent (this, reservarEquipos_maestro.class);
+                intenta5 = new Intent (this, administraractividades_maestro.class);
                 startActivityForResult(intenta5,0);
                 break;
             default:break;

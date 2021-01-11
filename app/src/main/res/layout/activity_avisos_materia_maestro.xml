@@ -22,12 +22,12 @@
 
             <TextView
                 android:id="@+id/tv_avisosMateria"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="AVISOS POR MATERIA"
+                android:text="@string/avisos_por_materia"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -35,7 +35,7 @@
 
         <View
             android:id="@+id/divider2"
-            android:layout_width="2in"
+            android:layout_width="300dp"
             android:layout_height="1dp"
             android:background="@color/atarraya"
             android:layout_gravity="center"/>
@@ -50,13 +50,13 @@
                 android:id="@+id/btn_crearaviso"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Crear Nuevo Aviso"
+                android:text="@string/crear_nuevo_aviso"
                 android:padding="5dp"
                 android:background="@drawable/rounded_edittext_focused"
                 android:backgroundTint="@color/atarraya"
                 android:textColor="@color/blanco"
                 android:textStyle="bold"
-                android:drawableLeft="@drawable/ic_add"
+                android:drawableStart="@drawable/ic_add"
                 />
 
 
@@ -77,15 +77,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Seleccione una materia :"
+                    android:text="@string/seleccione_una_materia"
                     android:textColor="@color/oscuro"
                     android:textSize="18sp" />
 
                 <Spinner
-                    android:id="@+id/sp_materia"
+                    android:id="@+id/sp_materiaaviso"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:background="@drawable/spinner_style" />
 
 
@@ -102,12 +102,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="AVISOS REGISTRADOS:"
+                android:text="@string/avisos_registrados"
                 android:textColor="@color/oscuro"
                 android:textSize="18sp" />
 
             <ListView
-                android:id="@+id/ltv_avisos"
+                android:id="@+id/ltv_avisosmateria"
                 android:layout_width="match_parent"
                 android:layout_height="518dp" />
 

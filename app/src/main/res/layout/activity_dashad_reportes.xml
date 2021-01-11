@@ -23,8 +23,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cv_asistgrado_admin"
+                    android:id="@+id/cv_asistgrado_maestro"
                     android:clickable="true"
+                    android:focusable="true"
                     android:layout_width="160dp"
                     android:layout_height="190dp"
                     android:layout_margin="10dp">
@@ -50,14 +51,15 @@
                             android:layout_marginTop="10dp"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Reportes Asistencia  por Grado"
+                            android:text="@string/reportes_asistencia_por_grado"
                             android:textStyle="bold" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cv_calificMateria_admin"
+                    android:id="@+id/cv_calificMateria_maestro"
                     android:clickable="true"
+                    android:focusable="true"
                     android:layout_width="160dp"
                     android:layout_height="190dp"
                     android:layout_margin="10dp">
@@ -83,7 +85,7 @@
                             android:layout_marginTop="10dp"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Reportes calificaciones por materia"
+                            android:text="@string/reportes_calificaciones_por_materia"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -96,8 +98,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cv_califGrado_admin"
+                    android:id="@+id/cv_califGrado_maestro"
                     android:clickable="true"
+                    android:focusable="true"
                     android:layout_width="160dp"
                     android:layout_height="190dp"
                     android:layout_margin="10dp">
@@ -123,14 +126,15 @@
                             android:layout_marginTop="10dp"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Reportes calificaciones por grado"
+                            android:text="@string/reportes_calificaciones_por_grado"
                             android:textStyle="bold" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cv_califEstudiante_admin"
+                    android:id="@+id/cv_califEstudiante_maestro"
                     android:clickable="true"
+                    android:focusable="true"
                     android:layout_width="160dp"
                     android:layout_height="190dp"
                     android:layout_margin="10dp">
@@ -156,7 +160,7 @@
                             android:layout_marginTop="10dp"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Reportes calificaciones por estudiante"
+                            android:text="@string/reportes_calificaciones_por_estudiante"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -170,8 +174,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cv_reporteconducta_admin"
+                    android:id="@+id/cv_reporteconducta_maestro"
                     android:clickable="true"
+                    android:focusable="true"
                     android:layout_width="340dp"
                     android:layout_height="150dp"
                     android:layout_margin="10dp">
@@ -198,7 +203,7 @@
                             android:layout_marginTop="10dp"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Reporte de conducta por alumno"
+                            android:text="@string/reporte_de_conducta_por_alumno"
                             android:textStyle="bold" />
 
                     </LinearLayout>

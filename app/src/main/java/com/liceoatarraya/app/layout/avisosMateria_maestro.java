@@ -32,7 +32,7 @@ public class avisosMateria_maestro extends AppCompatActivity {
         spinner.setAdapter(adapter);
 
         //Texto de ejemplo para el list view , para desencadenar el evento onclick
-        listViewavisos = (ListView) findViewById(R.id.ltv_avisos);
+        listViewavisos = (ListView) findViewById(R.id.ltv_avisosmateria);
         avisos= new ArrayList<String>();
         avisos.add("ID - TITULO - MENSAJE - ESTADO");
         avisos.add("1 - SUSPENCION CLASES - HOY NO HAY CLASES - ACTIVO");

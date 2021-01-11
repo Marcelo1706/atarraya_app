@@ -54,7 +54,7 @@ public class contenidos_maestro extends AppCompatActivity {
         listView_contenido.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                Intent intent = new Intent (getApplicationContext(), agregar_modif_contenido.class);
+                Intent intent = new Intent (getApplicationContext(), eliminarcontenido_maestro.class);
                 startActivityForResult(intent, 0);
             }
         });
