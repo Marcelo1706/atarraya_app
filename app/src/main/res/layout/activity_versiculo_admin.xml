@@ -31,12 +31,12 @@
 
                 <TextView
                     android:id="@+id/tv_versiculo"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="VERSÍCULO DE LA SEMANA"
+                    android:text="@string/versiculo_de_la_semana"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -44,7 +44,7 @@
 
             <View
                 android:id="@+id/divider2"
-                android:layout_width="2in"
+                android:layout_width="350dp"
                 android:layout_height="1dp"
                 android:background="@color/atarraya"
                 android:layout_gravity="center"/>
@@ -61,11 +61,11 @@
                     android:layout_height="wrap_content"
                     android:background="@color/atarraya"
                     android:layout_margin="10dp"
-                    android:text="Agregar versículo"
+                    android:text="@string/btn_agregarversiculo"
                     android:textColor="@color/blanco"
                     android:textStyle="bold"
-                    android:paddingEnd="20dp"
-                    android:drawableRight="@drawable/ic_add"/>
+                    android:padding="20dp"
+                    android:drawableEnd="@drawable/ic_add"/>
 
             </LinearLayout>
 
@@ -78,26 +78,20 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Versículos guardados :"
+                        android:text="@string/vers_guardados"
                         android:textColor="@color/oscuro"
                         android:textSize="18sp" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="15dp">
-                </LinearLayout>
-                <ListView
-                    android:id="@+id/ltv_versiculos"
-                    android:layout_width="match_parent"
-                    android:layout_height="518dp" />
+                    <ListView
+                        android:id="@+id/ltv_versiculos"
+                        android:layout_width="match_parent"
+                        android:layout_height="518dp" />
 
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

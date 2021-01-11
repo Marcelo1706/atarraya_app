@@ -23,7 +23,7 @@ public class menu_modadmin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_modadmin);
         date_in = findViewById(R.id.tv_fechamenu_admin);
-        date_button = findViewById(R.id.btn_consultarmenu_admin);
+        date_button = findViewById(R.id.btn_consultarfechamenu_admin);
         Calendar calendar = Calendar.getInstance();
         final int year = calendar.get(Calendar.YEAR);
         final int month = calendar.get(Calendar.MONTH);

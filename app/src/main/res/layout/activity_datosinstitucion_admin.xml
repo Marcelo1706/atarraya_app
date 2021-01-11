@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -31,12 +32,12 @@
 
                 <TextView
                     android:id="@+id/tv_datosinstitucion"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="DATOS INSTITUCIÓN"
+                    android:text="@string/datos_instituci"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -44,7 +45,7 @@
 
             <View
                 android:id="@+id/divider2"
-                android:layout_width="2in"
+                android:layout_width="350dp"
                 android:layout_height="1dp"
                 android:background="@color/atarraya"
                 android:layout_gravity="center"/>
@@ -67,7 +68,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_edittext_focused"
                     android:layout_gravity="center"
-                    android:text="Elegir Monograma"
+                    android:text="@string/btn_elegirmonograma"
                     android:layout_margin="10dp"
                     android:onClick="onClick"/>
 
@@ -87,7 +88,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nombre :"
+                        android:text="@string/nombre_institucion"
                         android:textColor="@color/oscuro"
                         android:textSize="15sp" />
 
@@ -96,7 +97,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:hint="Liceo Evangelico 'La Atarraya'"
+                        android:hint="@string/liceo_evangelico_la_atarraya"
                         android:maxLength="50" />
                 </LinearLayout>
 
@@ -109,7 +110,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Teléfono :"
+                        android:text="@string/tel"
                         android:textColor="@color/oscuro"
                         android:textSize="15sp" />
 
@@ -130,7 +131,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Email      :"
+                        android:text="@string/email"
                         android:textColor="@color/oscuro"
                         android:textSize="15sp" />
 
@@ -151,7 +152,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Dirección :"
+                        android:text="@string/direccion"
                         android:textColor="@color/oscuro"
                         android:textSize="15sp" />
 
@@ -179,7 +180,7 @@
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/rounded_edittext_focused"
-                        android:text="GUARDAR" />
+                        android:text="@string/guardar_informacion" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

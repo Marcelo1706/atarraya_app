@@ -36,18 +36,16 @@
                 android:layout_width="250dp"
                 android:layout_height="match_parent"
                 android:text="@string/fecha"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textAlignment="center"
-                android:inputType="none" />
-            <TextView
-                android:layout_width="30dp"
-                android:layout_height="match_parent"/>
+                android:inputType="none"
+                android:paddingTop="15dp"/>
 
             <ImageButton
-                android:id="@+id/btn_consultarmenu_admin"
-                android:layout_width="55dp"
+                android:id="@+id/btn_consultarfechamenu_admin"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0"
+                android:layout_weight="1"
                 android:background="@color/atarraya"
                 android:src="@drawable/ic_food"
                 android:contentDescription="@string/boton_DPmenú" />
@@ -59,7 +57,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/enviar_datos_admin"
+                android:id="@+id/btn_consultarcomida_admin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"

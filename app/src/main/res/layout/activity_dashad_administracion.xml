@@ -27,6 +27,7 @@
                 <androidx.cardview.widget.CardView
                     android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
+                    android:focusable="true"
                     android:id="@+id/cv_admingeneral"
                     android:layout_width="160dp"
                     android:layout_height="190dp"
@@ -47,9 +48,9 @@
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:gravity="center"
-                            android:padding="5dp"
+                            android:padding="7dp"
                             android:layout_marginTop="10dp"
-                            android:text="Administración  General"/>
+                            android:text="@string/cv_admingeneral"/>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -57,6 +58,7 @@
                     android:id="@+id/cv_usuariosyroles"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
+                    android:focusable="true"
                     android:layout_width="160dp"
                     android:layout_height="190dp"
                     android:layout_margin="10dp">
@@ -76,9 +78,9 @@
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:gravity="center"
-                            android:padding="5dp"
+                            android:padding="7dp"
                             android:layout_marginTop="10dp"
-                            android:text="Usuarios y Roles"/>
+                            android:text="@string/cv_usuariosyroles"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -93,6 +95,7 @@
                     android:id="@+id/cv_registroacademico"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
+                    android:focusable="true"
                     android:layout_width="160dp"
                     android:layout_height="190dp"
                     android:layout_margin="10dp">
@@ -112,15 +115,16 @@
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:gravity="center"
-                            android:padding="5dp"
+                            android:padding="7dp"
                             android:layout_marginTop="10dp"
-                            android:text="Registro Académico"/>
+                            android:text="@string/cv_registroacademico"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cv_reportesadmin"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
+                    android:focusable="true"
                     android:layout_width="160dp"
                     android:layout_height="190dp"
                     android:layout_margin="10dp">
@@ -143,9 +147,9 @@
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:gravity="center"
-                            android:padding="5dp"
+                            android:padding="7dp"
                             android:layout_marginTop="10dp"
-                            android:text="Reportes"/>
+                            android:text="@string/cv_reportesadmin"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -161,6 +165,7 @@
                     android:id="@+id/cv_prestamoequipo_admin"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
+                    android:focusable="true"
                     android:layout_width="match_parent"
                     android:layout_height="190dp"
                     android:layout_margin="10dp">
@@ -183,9 +188,9 @@
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:gravity="center"
-                            android:padding="5dp"
+                            android:padding="7dp"
                             android:layout_marginTop="10dp"
-                            android:text="Prestamo equipo"/>
+                            android:text="@string/cv_prestamoequipo_admin"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>

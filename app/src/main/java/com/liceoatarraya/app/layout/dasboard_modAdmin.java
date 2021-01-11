@@ -65,7 +65,7 @@ public class dasboard_modAdmin extends AppCompatActivity implements View.OnClick
                 startActivityForResult(intent_cal, 0);
                 break;
             case R.id.cv_menudiario_admin:
-                intent_menu = new Intent (this, menu_modadmin.class);
+                intent_menu = new Intent (this, dashboard_comidaAdmin.class);
                 startActivityForResult(intent_menu,0);
                 break;
             default:break;

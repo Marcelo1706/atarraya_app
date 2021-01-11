@@ -16,7 +16,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -31,12 +31,12 @@
 
                 <TextView
                     android:id="@+id/tv_plantadocente"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="ADMINITRACIÓN DE PLANTA DOCENTE"
+                    android:text="@string/adminitracion_de_planta_docente"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -44,7 +44,7 @@
 
             <View
                 android:id="@+id/divider2"
-                android:layout_width="2in"
+                android:layout_width="350dp"
                 android:layout_height="1dp"
                 android:background="@color/atarraya"
                 android:layout_gravity="center"/>
@@ -58,7 +58,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="47dp"
-                    android:text="Por seguridad, la cuenta de TIC, y la actual no se pueden editar" />
+                    android:text="@string/indicaciones_plantadoc" />
 
                 <Button
                     android:id="@+id/btn_agregardocente"
@@ -67,7 +67,7 @@
                     android:layout_margin="10dp"
                     android:background="@color/atarraya"
                     android:drawableEnd="@drawable/ic_add"
-                    android:text="Agregar docente"
+                    android:text="@string/btn_agregardocente"
                     android:textColor="@color/blanco"
                     android:textStyle="bold"
                     android:paddingEnd="5dp"
@@ -89,22 +89,15 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Planta docente actual :"
+                        android:text="@string/planta_docente_actual"
                         android:textColor="@color/oscuro"
                         android:textSize="18sp" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="15dp">
                 </LinearLayout>
                 <ListView
                     android:id="@+id/ltv_plantadocente"
                     android:layout_width="match_parent"
                     android:layout_height="460dp" />
-
-            </LinearLayout>
+        </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

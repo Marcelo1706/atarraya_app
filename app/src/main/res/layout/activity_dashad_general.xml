@@ -25,6 +25,7 @@
                 <androidx.cardview.widget.CardView
                     android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
+                    android:focusable="true"
                     android:id="@+id/cv_datosinstitucion"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
@@ -47,7 +48,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:layout_marginTop="10dp"
-                            android:text="Datos Institucionales"/>
+                            android:text="@string/cv_datosinstitucion"/>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -62,6 +63,7 @@
                     android:id="@+id/cv_devocionales"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
+                    android:focusable="true"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_margin="10dp">
@@ -83,7 +85,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:layout_marginTop="10dp"
-                            android:text="Devocionales"/>
+                            android:text="@string/cv_devocionales"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -97,6 +99,7 @@
                     android:id="@+id/cv_avisosadmin"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
+                    android:focusable="true"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_margin="10dp">
@@ -118,7 +121,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:layout_marginTop="10dp"
-                            android:text="Avisos"/>
+                            android:text="@string/cv_avisosadmin"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -132,6 +135,7 @@
                     android:id="@+id/cv_versiculos"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
+                    android:focusable="true"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_margin="10dp">
@@ -147,7 +151,7 @@
                             android:layout_height="64dp"
                             android:background="@drawable/cerclebackgroundmodadmin"
                             android:padding="10dp"
-                            android:src="@drawable/biblia" />
+                            android:src="@drawable/versiculos" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -156,7 +160,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:layout_marginTop="10dp"
-                            android:text="Versículos"/>
+                            android:text="@string/cv_versiculos"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 

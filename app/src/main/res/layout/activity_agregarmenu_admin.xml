@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".layout.crearversiculo_admin">
+    tools:context=".layout.agregarmenu_admin">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -13,10 +13,12 @@
             android:layout_width="411dp"
             android:layout_height="674dp"
             android:orientation="vertical"
+            android:layout_gravity="top"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -25,13 +27,13 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/tv_crearaviso"
+                    android:id="@+id/tv_nuevoplatillo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="@string/nuevo_versiculo"
+                    android:text="@string/nuevoPlatillo"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -39,7 +41,7 @@
 
             <View
                 android:id="@+id/divider2"
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
                 android:background="@color/atarraya" />
@@ -47,91 +49,79 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/versiculo"
-                    android:textColor="@color/oscuro"
-                    android:textSize="18sp" />
+                    android:text="@string/nombreplatillo"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
                 <EditText
-                    android:id="@+id/edt_contenidoversiculo"
-                    android:hint="@string/edt_contenidoversiculo"
+                    android:id="@+id/edt_nombreplatillo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/platilloejemplo"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/descplatillo"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edt_descripcionplatillo"
                     android:layout_width="match_parent"
                     android:layout_height="215dp"
                     android:ems="40"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
                     android:padding="5dp"
-                    android:background="@drawable/border"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:hint="@string/descripcionplatillo"
                     android:layout_marginTop="10dp"
-                    android:text="@string/pasaje"
-                    android:textColor="@color/oscuro"
-                    android:textSize="18sp" />
-                <EditText
-                    android:id="@+id/edt_pasajeversiculo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/edt_pasajeversiculo"
-                    android:maxLength="50"
-                    android:layout_marginTop="25dp"/>
-
+                    android:layout_marginBottom="10dp"/>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:text="@string/semanaversiculo"
-                    android:textColor="@color/oscuro"
-                    android:textSize="18sp" />
-                <Spinner
-                    android:id="@+id/sp_semanaversiculo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="25dp" />
+                    android:text="@string/precioplatillo"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edt_precioplatillo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/precioejemplo"/>
+
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="25dp"
                 android:gravity="center"
-                android:layout_marginTop="80dp">
+                android:orientation="horizontal">
+
                 <Button
-                    android:id="@+id/btn_guardarversiculo"
+                    android:id="@+id/btn_guardarplatillo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/btn_guardarversiculo"
-                    android:background="@drawable/rounded_edittext_focused"
-                    android:backgroundTint="@color/atarraya"
-                    android:padding="5dp"
-                    android:textColor="@color/blanco"/>
-                <Button
-                    android:id="@+id/btn_cancelarversiculo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btn_cancelarversiculo"
-                    android:layout_marginStart="5dp"
-                    android:padding="5dp"
-                    android:background="@drawable/rounded_edittext_focused"
-                    android:backgroundTint="#7C7B7B"
-                    android:textColor="@color/blanco"/>
+                    android:layout_marginStart="10dp"
+                    android:background="#157A19"
+                    android:padding="15dp"
+                    android:text="@string/guardar_platillo"
+                    android:textColor="@color/blanco"
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,7 +20,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".layout.eliminarplanificacion_maestro"></activity>
+        <activity android:name=".layout.agregarmenu_admin"></activity>
+        <activity android:name=".layout.dashboard_comidaAdmin" />
+        <activity android:name=".layout.eliminarplanificacion_maestro" />
         <activity android:name=".layout.crearnuevaactividad_maestro" />
         <activity android:name=".layout.administraractividades_maestro" />
         <activity android:name=".layout.crearnuevaprueba_maestro" />
