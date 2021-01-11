@@ -23,12 +23,12 @@
 
                 <TextView
                     android:id="@+id/tv_subirplanifi"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="SUBIR PLANIFICACIÓN"
+                    android:text="@string/subir_planificacion"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -36,7 +36,7 @@
 
             <View
                 android:id="@+id/divider2"
-                android:layout_width="2in"
+                android:layout_width="350dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
                 android:background="@color/atarraya" />
@@ -51,8 +51,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="Nombre de la planificación:"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/nombreplanificacion"
                     android:textColor="@color/oscuro"
                     android:textSize="18sp"
                     android:layout_marginTop="10dp"/>
@@ -61,43 +61,43 @@
                     android:id="@+id/tv_nombreplanif"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Escriba aquí"
+                    android:layout_marginStart="10dp"
+                    android:hint="@string/escriba_aqu"
                     android:maxLength="50"
                     android:layout_marginTop="10dp"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="Seleccione una materia:"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/materiaseleccion"
                     android:textColor="@color/oscuro"
                     android:textSize="18sp"
                     android:layout_marginTop="20dp"/>
 
                 <Spinner
-                    android:id="@+id/sp_materia"
+                    android:id="@+id/sp_materiaplanificacion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="Seleccione un archivo:"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/seleccionar_archivos_tareas"
                     android:textColor="@color/oscuro"
                     android:textSize="18sp"
                     android:layout_marginTop="15dp"/>
 
                 <Button
-                    android:id="@+id/btn_seleccionararchivo"
+                    android:id="@+id/btn_seleccionararchivo_planif"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Seleccionar Archivo"
-                    android:drawableLeft="@drawable/ic_up"
+                    android:layout_marginStart="10dp"
+                    android:hint="@string/seleccionar_archivos_tareas"
+                    android:drawableStart="@drawable/ic_up"
                     android:background="@drawable/rounded_edittext_focused"
                     android:padding="15dp"
                     android:layout_marginTop="10dp"/>
@@ -105,16 +105,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:layout_marginLeft="10dp"
-                    android:text="Información del archivo"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/infodel_archivo"
                     android:textColor="@color/oscuro"
                     android:textSize="18sp" />
                 <TextView
+                    android:id="@+id/tv_infoarchivo_planif"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Nombre, peso y extensión"
+                    android:layout_marginStart="10dp"
+                    android:hint="@string/nombre_peso_y_ext"
                     android:textColor="@color/oscuro"
                     android:textSize="18sp" />
 
@@ -123,45 +124,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginTop="30dp">
+                android:layout_marginTop="70dp">
 
                 <Button
-                    android:id="@+id/btn_cancelarsubida"
-                    android:layout_width="154dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_edittext_focused"
-                    android:padding="5dp"
-                    android:text="CANCELAR"
-                    android:textColor="@color/oscuro" />
-
-                <Button
-                    android:id="@+id/btn_eliminararchivo"
-                    android:layout_width="145dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/rounded_edittext_focused"
-                    android:padding="5dp"
-                    android:text="ELIMINAR "
-                    android:textColor="@color/pink" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp">
-
-                <Button
-                    android:id="@+id/btn_guardararchivo"
+                    android:id="@+id/btn_guardarplanif"
                     android:layout_width="343dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
                     android:background="@drawable/rounded_edittext_focused"
                     android:backgroundTint="@color/colorPrimary"
-                    android:drawableLeft="@drawable/ic_file"
+                    android:drawableStart="@drawable/ic_file"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
-                    android:text="Guardar Archivo "
+                    android:text="@string/guardar_archivo"
                     android:textColor="@color/blanco"
                     android:textStyle="bold"/>
             </LinearLayout>

@@ -11,7 +11,7 @@
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="411dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -26,12 +26,12 @@
 
                 <TextView
                     android:id="@+id/tv_planifdocente"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="PLANIFICACIÓN DEL DOCENTE"
+                    android:text="@string/planificaciondel_docente"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -39,7 +39,7 @@
 
             <View
                 android:id="@+id/divider2"
-                android:layout_width="2in"
+                android:layout_width="350dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
                 android:background="@color/atarraya" />
@@ -53,9 +53,9 @@
                     android:id="@+id/btn_subirplanificacion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Subir Planificación"
+                    android:text="@string/btn_subirplanificacion"
                     android:background="@drawable/rounded_edittext_focused"
-                    android:drawableLeft="@drawable/ic_up"
+                    android:drawableStart="@drawable/ic_up"
                     android:padding="15dp"/>
 
 
@@ -71,7 +71,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="PLANIFICACIONES SUBIDAS"
+                    android:text="@string/planificaciones_subidas"
                     android:textColor="@color/oscuro"
                     android:textSize="18sp" />
 

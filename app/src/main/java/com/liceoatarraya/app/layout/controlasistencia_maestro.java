@@ -34,7 +34,7 @@ public class controlasistencia_maestro extends AppCompatActivity {
         setContentView(R.layout.activity_controlasistencia_maestro);
 
         //Texto de ejemplo para el spinner
-        Spinner spinner = findViewById(R.id.sp_gradoconsulta);
+        Spinner spinner = findViewById(R.id.sp_gradoconsultaasistencia);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.gradosasistencia_array, android.R.layout.simple_spinner_item);
         spinner.setAdapter(adapter);
 

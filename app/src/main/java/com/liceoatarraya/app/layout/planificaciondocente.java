@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -38,6 +40,15 @@ public class planificaciondocente extends AppCompatActivity {
         subirplanif.setOnClickListener(v -> {
             Intent intent = new Intent (v.getContext(), subirplanificaciones_maestro.class);
             startActivityForResult(intent, 0);
+        });
+
+        //evento que abre el activity para modificar algún contenido
+        listViewPlanificacion.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                Intent intent = new Intent (getApplicationContext(), eliminarplanificacion_maestro.class);
+                startActivityForResult(intent, 0);
+            }
         });
     }
 }

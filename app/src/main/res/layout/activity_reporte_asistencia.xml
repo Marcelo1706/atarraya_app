@@ -23,12 +23,12 @@
 
             <TextView
                 android:id="@+id/tv_reporteasistencia"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="REPORTE ASISTENCIA"
+                android:text="@string/reporte_asistencia"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -36,7 +36,7 @@
 
         <View
             android:id="@+id/divider2"
-            android:layout_width="2in"
+            android:layout_width="300dp"
             android:layout_height="1dp"
             android:layout_gravity="center"
             android:background="@color/atarraya" />
@@ -50,8 +50,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="NIE:"
+                android:layout_marginStart="10dp"
+                android:text="@string/nie"
                 android:textColor="@color/oscuro"
                 android:textSize="18sp" />
 
@@ -59,8 +59,8 @@
                 android:id="@+id/tv_nie"
                 android:layout_width="225dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="12345566" />
+                android:layout_marginStart="10dp"
+                android:hint="@string/ejemplonie" />
 
         </LinearLayout>
 
@@ -73,8 +73,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="NOMBRE:"
+                android:layout_marginStart="10dp"
+                android:text="@string/nombrealumno"
                 android:textColor="@color/oscuro"
                 android:textSize="18sp" />
 
@@ -82,8 +82,8 @@
                 android:id="@+id/tv_nombrealumno"
                 android:layout_width="225dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="Tyler Joshep" />
+                android:layout_marginStart="10dp"
+                android:hint="@string/ejemploNombreAlumno" />
 
         </LinearLayout>
 
@@ -97,7 +97,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="SELECCIONE UNA OPCIÓN :"
+                android:text="@string/seleccioneOpcion"
                 android:textColor="@color/oscuro"
                 android:textSize="18sp" />
 
@@ -112,11 +112,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="¿FALTÓ EL ALUMNO A CLASES? "
+                android:text="@string/preguntaasistencia"
                 android:textColor="@color/oscuro"
                 android:textSize="18sp" />
 
             <RadioGroup
+                android:id="@+id/rgp_confirmarasistencia"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -126,26 +127,26 @@
                     android:id="@+id/rbtn_opcSi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SI" />
+                    android:text="@string/inasistenciaconfirmada" />
 
                 <RadioButton
                     android:id="@+id/rbtn_opcNo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="NO" />
+                    android:layout_marginStart="10dp"
+                    android:text="@string/asistenciaconfirmada" />
             </RadioGroup>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="OBSERVACIONES :"
+                android:text="@string/observaciones"
                 android:textColor="@color/oscuro"
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/et_observacionesasistencia"
+                android:id="@+id/edt_observacionesasistencia"
                 android:layout_width="match_parent"
                 android:layout_height="215dp"
                 android:ems="40"
@@ -160,20 +161,20 @@
             android:orientation="horizontal"
             android:gravity="center">
             <Button
-                android:id="@+id/btn_guardarreporte"
+                android:id="@+id/btn_guardarreporteasistencia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="GUARDAR REPORTE"
+                android:text="@string/guardar_reporteasistencia"
                 android:background="@drawable/rounded_edittext_focused"
                 android:backgroundTint="@color/atarraya"
                 android:padding="5dp"
                 android:textColor="@color/blanco"/>
             <Button
-                android:id="@+id/btn_cancelarreporte"
+                android:id="@+id/btn_cancelarreporteasistencia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CANCELAR REPORTE"
-                android:layout_marginLeft="5dp"
+                android:text="@string/cancelar_reporteasistencia"
+                android:layout_marginStart="5dp"
                 android:padding="5dp"
                 android:background="@drawable/rounded_edittext_focused"
                 android:backgroundTint="@color/pink"

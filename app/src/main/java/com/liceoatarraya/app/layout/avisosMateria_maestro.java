@@ -27,7 +27,7 @@ public class avisosMateria_maestro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_avisos_materia_maestro);
         //Texto de ejemplo para el spinner
-        Spinner spinner = findViewById(R.id.sp_materia);
+        Spinner spinner = findViewById(R.id.sp_materiaaviso);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.array_materias, android.R.layout.simple_spinner_item);
         spinner.setAdapter(adapter);
 
