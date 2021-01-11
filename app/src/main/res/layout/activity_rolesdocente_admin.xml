@@ -11,7 +11,7 @@
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="411dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -26,12 +26,12 @@
 
                 <TextView
                     android:id="@+id/tv_rolesdocente"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Administración de Roles\n\para personal Docente"
+                    android:text="@string/admininroles_personaldocente"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -39,7 +39,7 @@
 
             <View
                 android:id="@+id/divider2"
-                android:layout_width="2in"
+                android:layout_width="350dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
                 android:background="@color/atarraya" />
@@ -52,7 +52,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="En esta página, se administra el nivel de acceso de los docentes al sistema."/>
+                    android:text="@string/indicaciones_rolesdocente"/>
 
 
             </LinearLayout>
@@ -67,7 +67,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="LISTADO DOCENTES + ROLES"
+                    android:text="@string/listado_docentes_roles"
                     android:textColor="@color/oscuro"
                     android:textSize="18sp" />
 

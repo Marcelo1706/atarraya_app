@@ -29,6 +29,7 @@
                     android:layout_height="194dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
+                    android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground">
 
                     <LinearLayout
@@ -42,7 +43,8 @@
                             android:layout_height="100dp"
                             android:background="@drawable/cerclebackgroundmodadmin"
                             android:padding="10dp"
-                            android:src="@drawable/ic_registro" />
+                            android:src="@drawable/ic_registro"
+                            android:contentDescription="@string/imagen_card_registrar_equipo" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -50,7 +52,7 @@
                             android:layout_marginTop="10dp"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Registrar Equipo"
+                            android:text="@string/cv_registrarequipo"
                             android:textStyle="bold"
                             android:textSize="18sp"/>
 
@@ -67,6 +69,7 @@
                     android:id="@+id/cv_reservarequipo"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
+                    android:focusable="true"
                     android:layout_width="211dp"
                     android:layout_height="194dp"
                     android:layout_margin="10dp">
@@ -80,7 +83,8 @@
                             android:layout_height="100dp"
                             android:background="@drawable/cerclebackgroundmodadmin"
                             android:src="@drawable/ic_equipo"
-                            android:padding="10dp"/>
+                            android:padding="10dp"
+                            android:contentDescription="@string/imagen_card_reservarequipos"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -88,7 +92,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:layout_marginTop="10dp"
-                            android:text="Reservar equipo"
+                            android:text="@string/reservar_equipos"
                             android:textSize="18sp"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -102,6 +106,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cv_adminreservas"
                     android:foreground="?android:attr/selectableItemBackground"
+                    android:focusable="true"
                     android:clickable="true"
                     android:layout_width="211dp"
                     android:layout_height="194dp"
@@ -116,7 +121,8 @@
                             android:layout_height="100dp"
                             android:background="@drawable/cerclebackgroundmodadmin"
                             android:src="@drawable/ic_work"
-                            android:padding="10dp"/>
+                            android:padding="10dp"
+                            android:contentDescription="@string/imagen_card_adminreservas"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -124,7 +130,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:layout_marginTop="10dp"
-                            android:text="Administrar Reservas"
+                            android:text="@string/cv_adminreservas"
                             android:textSize="18sp"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>

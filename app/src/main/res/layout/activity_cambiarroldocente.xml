@@ -16,7 +16,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -31,12 +31,12 @@
 
                 <TextView
                     android:id="@+id/tv_rolesdocente"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Administración de Roles\n\para personal Docente"
+                    android:text="@string/admininroles_personaldocente"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -44,7 +44,7 @@
 
             <View
                 android:id="@+id/divider2"
-                android:layout_width="2in"
+                android:layout_width="350dp"
                 android:layout_height="1dp"
                 android:background="@color/atarraya"
                 android:layout_gravity="center"/>
@@ -59,7 +59,7 @@
                     android:layout_width="340dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="La foto de perfil y la contraseña deben ser cambiadas por el docente.La contraseña por defecto es d0centes@tarraya2020"
+                    android:text="@string/indicaciones_modifroles"
                     android:textAlignment="center" />
 
                 <LinearLayout
@@ -71,7 +71,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Dui :"
+                        android:text="@string/numeroDui"
                         android:textColor="@color/oscuro"
                         android:textSize="15sp" />
 
@@ -81,7 +81,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="40dp"
                         android:enabled="false"
-                        android:hint="055890561"
+                        android:hint="@string/ejemplonie"
                         android:maxLength="9" />
                 </LinearLayout>
 
@@ -94,7 +94,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nombres :"
+                        android:text="@string/nombre_del_maestro"
                         android:textColor="@color/oscuro"
                         android:textSize="15sp" />
 
@@ -104,7 +104,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:enabled="false"
-                        android:hint="Juan José" />
+                        android:hint="@string/ejemploNombreAlumno" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -116,7 +116,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Apellidos:"
+                        android:text="@string/apellidosmaestros"
                         android:textColor="@color/oscuro"
                         android:textSize="15sp" />
 
@@ -126,7 +126,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:enabled="false"
-                        android:text="Henriquez Solorzano" />
+                        android:text="@string/ejemplo_apellido" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -138,7 +138,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Email:"
+                        android:text="@string/email"
                         android:textColor="@color/oscuro"
                         android:textSize="15sp" />
 
@@ -148,7 +148,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="40dp"
                         android:enabled="false"
-                        android:hint="henriquezsolorzano@gob.es.sv"
+                        android:hint="@string/ejemploemail"
                         android:inputType="textEmailAddress" />
                 </LinearLayout>
 
@@ -161,16 +161,15 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Rol:"
+                        android:text="@string/rol"
                         android:textColor="@color/oscuro"
                         android:textSize="15sp" />
 
                     <Spinner
                         android:id="@+id/sp_roldocente"
-                        android:layout_width="302dp"
+                        android:layout_width="102dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="60dp"
-                        android:inputType="textEmailAddress" />
+                        android:layout_marginStart="30dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -182,10 +181,10 @@
 
                     <Button
                         android:id="@+id/btn_guardardatos"
-                        android:layout_width="150dp"
+                        android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/rounded_edittext_focused"
-                        android:text="GUARDAR" />
+                        android:text="@string/guardardatosdelmaestro" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
