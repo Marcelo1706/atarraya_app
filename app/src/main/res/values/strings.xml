@@ -302,4 +302,7 @@
     <string name="imagen_card_registrar_equipo">IMAGEN CARD REGISTRAR EQUIPO</string>
     <string name="imagen_card_reservarequipos">imagen card reservarequipos</string>
     <string name="imagen_card_adminreservas">Imagen card adminreservas</string>
+    <string name="register_subjects">Registrar Materias</string>
+    <string name="ponderacion_asignaturas">Ponderación Asignaturas</string>
+    <string name="periodos_asignatura">Periodos Asignatura</string>
 </resources>

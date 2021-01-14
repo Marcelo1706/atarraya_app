@@ -66,4 +66,9 @@ public class GradosSeccionesActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), OrientadoresActivity.class);
         startActivity(intent);
     }
+
+    public void launchAgregarGradoActivity(View v){
+        Intent intent = new Intent(getApplicationContext(), EditarGradoActivity.class);
+        startActivity(intent);
+    }
 }

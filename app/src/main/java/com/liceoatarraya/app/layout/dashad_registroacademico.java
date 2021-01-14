@@ -6,6 +6,7 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.liceoatarraya.app.R;
 
@@ -52,16 +53,15 @@ public class dashad_registroacademico extends AppCompatActivity implements View.
                 startActivity(intent);
                 break;
             case R.id.cv_promgrados:
-                /*intent= new Intent (this, calendario_modadmin.class);
-                startActivityForResult(intent, 0);*/
+                Toast.makeText(getApplicationContext(), "Esta función aún no está disponible, pero lo estará en un futuro", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.cv_ponderaasignatura:
-                /*intent = new Intent (this, calendario_modadmin.class);
-                startActivityForResult(intent, 0);*/
+                intent = new Intent (this, PonderacionAsignaturasActivity.class);
+                startActivityForResult(intent, 0);
                 break;
             case R.id.cv_periodosasig:
-                /*intent = new Intent (this, calendario_modadmin.class);
-                startActivityForResult(intent, 0);*/
+                intent = new Intent (this, PeriodosMateriasActivity.class);
+                startActivityForResult(intent, 0);
                 break;
             default:break;
         }
