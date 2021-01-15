@@ -113,14 +113,15 @@
 
     <Button
         android:id="@+id/btn_guardarevento"
-        android:layout_width="159dp"
+        android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/sv_inputs"
         android:layout_marginTop="50dp"
         android:background="#09A50F"
         android:text="@string/guardar_evento"
         android:textColor="#fff"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:padding="8dp"/>
 
     <Button
         android:id="@+id/btn_cancelarevento"
@@ -130,10 +131,11 @@
         android:layout_alignBottom="@id/btn_guardarevento"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="0dp"
-        android:background="#E91E63"
+        android:background="#EA0404"
         android:text="@string/cancelar_evento"
         android:textColor="#fff"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:padding="15dp"/>
 
 
 

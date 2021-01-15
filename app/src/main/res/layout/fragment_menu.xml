@@ -35,7 +35,13 @@
                 android:layout_height="50dp"
                 android:orientation="horizontal"
                 android:layout_marginTop="32dp">
-
+                <ImageButton
+                    android:id="@+id/btn_menufechaatras_al"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/atarraya"
+                    android:src="@drawable/ic_menuatras" />
                 <TextView
                     android:id="@+id/tv_fechamenu_alumno"
                     android:layout_width="250dp"
@@ -45,12 +51,12 @@
                     android:inputType="none" />
 
                 <ImageButton
-                    android:id="@+id/btn_consultarfechasmenu_al"
+                    android:id="@+id/btn_menufechaadelante_al"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/atarraya"
-                    android:src="@drawable/ic_food" />
+                    android:src="@drawable/ic_menuadelante" />
             </LinearLayout>
 
             <LinearLayout
