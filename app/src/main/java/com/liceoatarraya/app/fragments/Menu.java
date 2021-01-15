@@ -20,8 +20,10 @@ import android.widget.Toast;
 import com.liceoatarraya.app.R;
 
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -29,7 +31,7 @@ import java.util.Date;
  * create an instance of this fragment.
  */
 public class Menu extends Fragment {
-        // TODO: Rename parameter arguments, choose names that match
+    // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -37,6 +39,8 @@ public class Menu extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    TextView tv_fechamenu_alumno;
+    Date dt = new Date();
 
     public Menu() {
         // Required empty public constructor
@@ -74,7 +78,47 @@ public class Menu extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_menu, container, false);
+        tv_fechamenu_alumno = view.findViewById(R.id.tv_fechamenu_alumno);
+        ImageButton btnAdelante = view.findViewById(R.id.btn_menufechaadelante_al);
+        btnAdelante.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addDay(v);
+            }
+        });
+        ImageButton btnAtras = view.findViewById(R.id.btn_menufechaatras_al);
+        btnAtras.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                subtractDay(v);
+            }
+        });
+        dt = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
+        tv_fechamenu_alumno.setText(sdf.format(dt));
         return inflater.inflate(R.layout.fragment_menu, container, false);
 
+
+    }
+
+    public void addDay(View v) {
+        if (dt == null) dt = new Date();
+        Calendar c = Calendar.getInstance();
+        c.setTime(dt);
+        c.add(Calendar.DATE, 1);
+        dt = c.getTime();
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
+        tv_fechamenu_alumno.setText(sdf.format(dt));
+    }
+
+    public void subtractDay(View v) {
+        if (dt == null) dt = new Date();
+        Calendar c = Calendar.getInstance();
+        c.setTime(dt);
+        c.add(Calendar.DATE, -1);
+        dt = c.getTime();
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
+        tv_fechamenu_alumno.setText(sdf.format(dt));
     }
 }

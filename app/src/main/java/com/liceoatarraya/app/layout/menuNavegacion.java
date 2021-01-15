@@ -161,8 +161,6 @@ public class menuNavegacion extends AppCompatActivity implements View.OnClickLis
             fotoperfil=findViewById(R.id.imv_fotoperfil);
             fotoperfil.setImageURI(path);
 
-        } else {
-            Toast.makeText(this, "IMAGEN NO SELECCIONADA", Toast.LENGTH_SHORT).show();
         }
     }
 

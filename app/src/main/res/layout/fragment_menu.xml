@@ -35,6 +35,7 @@
                 android:layout_height="50dp"
                 android:orientation="horizontal"
                 android:layout_marginTop="32dp">
+
                 <ImageButton
                     android:id="@+id/btn_menufechaatras_al"
                     android:layout_width="0dp"
